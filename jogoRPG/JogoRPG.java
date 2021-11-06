@@ -15,10 +15,40 @@ public class JogoRPG {
 	}
 
 	static void jogar() {
+		prologo();
+	}
+	
+		
+		static void historia() {
+	
 
 	}
 
-	static void historia() {
+	static void prologo() {
+		System.out.println("Tudo começou pelo amanhecer daquele dia que seria marcado para sempre nos livros de história: "
+				+ "\nO DIA QUE O BRASIL FOI INVADIDO!");
+		System.out.println("A Coalisão era um grupo de países que se reuniram em busca da cura da praga que afetou a produção mundial de café."
+				+ "\n Essa praga foi transmitida por fungos que eram propagados pelo ar por meio de esporos,"
+				+ "estes que em contato com os grãos, alteravam a genética e impossibilitavam o desenvolvimento do grão de café.");
+		
+		System.out.println("Naquela manhã, o Major se encontrava no quartel extremamente enfurecido! E pronto para dar as ordens para o seu fiel subordinado, o Capitão:");
+		
+		System.out.println ("\n-Major:- Capitão! venha até aqui. "
+				+ "\n Precisamos alocar o quanto antes o novo soldado da classe Sniper no batalhão.");
+		System.out.println("-Capitão: Certo! Irei fazer isso! Inclusive, qual o seu nome, filho?");
+		
+		System.out.println("-Personagem: " + nomeJogador);
+		
+		System.out.println("-Major: " + nomeJogador + "? Hahahaha!! Isso aqui é uma guerra! "
+				+ "\nAqueles selvagens estão nos atacando e vocês vão ficar trocando figurinhas sobre um ao outro? "
+				+ "\nAqui você vai ser o soldado 06!” Gritou.");
+		
+		System.out.println("E depois de ser apresentado ao quartel, 06 começou o seu treinamento junto com o capitão. "
+				+ "\n Uma pena que eles não puderam continuar a conversa, pois ali próximo as tropas da coalisão"
+				+ "\n estavam invadindo o terreno. Eram milhares de soldados descendo pelo céu de paraquedas.");
+		
+		
+		
 
 	}
 
