@@ -6,7 +6,7 @@ public class JogoRPG {
 	static Scanner input = new Scanner(System.in);
 	static String nomeJogador;
 
-	// M�todo para entradas de n�meros
+	// Método para entradas de números
 	static int entradaDadosInt(String text) {
 		System.out.println(text);
 		int numberInput = input.nextInt();
@@ -20,39 +20,76 @@ public class JogoRPG {
 	
 		
 		static void historia() {
+			int value = 0;
+	        while (value != 1) {
+	            System.out.println("\n" + "───────────▒▒▒▒▒▒▒▒\r\n" + "─────────▒▒▒──────▒▒▒\r\n"
+	                    + "────────▒▒───▒▒▒▒──▒░▒\r\n" + "───────▒▒───▒▒──▒▒──▒░▒\r\n" + "──────▒▒░▒──────▒▒──▒░▒\r\n"
+	                    + "───────▒▒░▒────▒▒──▒░▒\r\n" + "─────────▒▒▒▒▒▒▒───▒▒\r\n" + "─────────────────▒▒▒\r\n"
+	                    + "─────▒▒▒▒────────▒▒\r\n" + "───▒▒▒░░▒▒▒─────▒▒──▓▓▓▓▓▓▓▓\r\n"
+	                    + "──▒▒─────▒▒▒────▒▒▓▓▓▓▓░░░░░▓▓──▓▓▓▓\r\n" + "─▒───▒▒────▒▒─▓▓▒░░░░░░░░░█▓▒▓▓▓▓░░▓▓▓\r\n"
+	                    + "▒▒──▒─▒▒───▓▒▒░░▒░░░░░████▓▓▒▒▓░░░░░░▓▓\r\n" + "░▒▒───▒──▓▓▓░▒░░░░░░█████▓▓▒▒▒▒▓▓▓▓▓░░▓▓\r\n"
+	                    + "──▒▒▒▒──▓▓░░░░░░███████▓▓▓▒▒▒▒▒▓───▓▓░▓▓\r\n" + "──────▓▓░░░░░░███████▓▓▓▒▒▒▒▒▒▒▓───▓░░▓▓\r\n"
+	                    + "─────▓▓░░░░░███████▓▓▓▒▒▒▒▒▒▒▒▒▓▓▓▓░░▓▓\r\n" + "────▓▓░░░░██████▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▓░░░░▓▓\r\n"
+	                    + "────▓▓▓░████▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓" + "   O ano é 2023...\r\n"
+	                    + "─────▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓"
+	                    + "   Depois de uma pandemia mundial, a humanidade se viu cercada de um novo problema, \r\n"
+	                    + "─────▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓"
+	                    + "   muito maior que o anterior! ACABOU O CAFÉ!!! Um vírus afetou toda a produção mundial de café, \r\n"
+	                    + "──────▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓"
+	                    + "   crescendo nos solos e secando todas as sementes, porém, o único país que parece que não foi afetado foi o Brasil,\r\n"
+	                    + "───────▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓"
+	                    + "   mais especificamente a região de Três Corações. Cientistas de todo o mundo vieram ao Brasil tentar entender tal fenômeno,\r\n"
+	                    + "─────────▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓"
+	                    + "     mas sem sucesso. Depois de conversas que envolviam o aumento da exportação de café, e posteriormente, a tentativa de exploração \r\n"
+	                    + "───────────▓▓▓▓▓▓▒▒▒▒▒▓▓▓▓"
+	                    + "   do solo brasileiro, a tensões aumentaram.A \"Organização Mundial de Programadores\" (OMP) falava que era impossível trabalhar \r\n"
+	                    + "───────────────▓▓▓▓▓▓▓▓"
+	                    + " em tais condições, e que seus programadores regrediram ao ponto de não conseguirem executar um simples: \"Hello World\". \r\n"
+	                    + "Também foram professores, advogados, traders, caminhoneiros e diversas outras profissões do mundo todo.\""
+	                    + "\r\n" + "O inevitável aconteceu... GUERRA!!!\r\n" + "\r\n"
+	                    + "Diversos países do mundo todo em uma ofensiva direta para três corações está prestes a acontecer!! Precisamos nos preparar!!");
+
+	            value = entradaDadosInt("\n(1) Voltar");
+
+	            if (value != 1) {
+	                System.out.println("\nOpção inválida!");
+	            } else {
+	                menu();
+	            }
+	        }
 	
 
 	}
 
 	static void prologo() {
-		System.out.println("Tudo come�ou pelo amanhecer daquele dia que seria marcado para sempre nos livros de hist�ria: "
+		System.out.println("Tudo começou pelo amanhecer daquele dia que seria marcado para sempre nos livros de história: "
 				+ "\nO DIA QUE O BRASIL FOI INVADIDO!");
-		System.out.println("A Coalis�o era um grupo de pa�ses que se reuniram em busca da cura da praga que afetou a produ��o mundial de caf�."
+		System.out.println("A Coalisão era um grupo de países que se reuniram em busca da cura da praga que afetou a produção mundial de café."
 				+ "\n Essa praga foi transmitida por fungos que eram propagados pelo ar por meio de esporos,"
-				+ "estes que em contato com os gr�os, alteravam a gen�tica e impossibilitavam o desenvolvimento do gr�o de caf�.");
+				+ "estes que em contato com os grãos, alteravam a genética e impossibilitavam o desenvolvimento do grão de café.");
 		
-		System.out.println("Naquela manh�, o Major se encontrava no quartel extremamente enfurecido! E pronto para dar as ordens para o seu fiel subordinado, o Capit�o:");
+		System.out.println("Naquela manhã, o Major se encontrava no quartel extremamente enfurecido! E pronto para dar as ordens para o seu fiel subordinado, o Capitão:");
 		
-		System.out.println ("\n-Major:- Capit�o! venha at� aqui. "
-				+ "\n Precisamos alocar o quanto antes o novo soldado da classe Sniper no batalh�o.");
-		System.out.println("-Capit�o: Certo! Irei fazer isso! Inclusive, qual o seu nome, filho?");
+		System.out.println ("\n-Major:- Capitão! venha até aqui. "
+				+ "\n Precisamos alocar o quanto antes o novo soldado da classe Sniper no batalhão.");
+		System.out.println("-Capitão: Certo! Irei fazer isso! Inclusive, qual o seu nome, filho?");
 		
 		System.out.println("-Personagem: " + nomeJogador);
 		
-		System.out.println("-Major: " + nomeJogador + "? Hahahaha!! Isso aqui � uma guerra! "
-				+ "\nAqueles selvagens est�o nos atacando e voc�s v�o ficar trocando figurinhas sobre um ao outro? "
-				+ "\nAqui voc� vai ser o soldado 06!� Gritou.");
+		System.out.println("-Major: " + nomeJogador + "? Hahahaha!! Isso aqui é uma guerra! "
+				+ "\nAqueles selvagens estão nos atacando e vocês vão ficar trocando figurinhas sobre um ao outro? "
+				+ "\nAqui você vai ser o soldado 06!” Gritou.");
 		
-		System.out.println("E depois de ser apresentado ao quartel, 06 come�ou o seu treinamento junto com o capit�o. "
-				+ "\n Uma pena que eles n�o puderam continuar a conversa, pois ali pr�ximo as tropas da coalis�o"
-				+ "\n estavam invadindo o terreno. Eram milhares de soldados descendo pelo c�u de paraquedas.");
+		System.out.println("E depois de ser apresentado ao quartel, 06 começou o seu treinamento junto com o capitão. "
+				+ "\n Uma pena que eles não puderam continuar a conversa, pois ali próximo as tropas da coalisão"
+				+ "\n estavam invadindo o terreno. Eram milhares de soldados descendo pelo céu de paraquedas.");
 		
 		
 		
 
 	}
 
-	static void instru��es(String name) {
+	static void instruções(String name) {
 		System.out.println("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
 				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
 				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
@@ -108,15 +145,15 @@ public class JogoRPG {
 				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
 				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
 		
-		System.out.println("\n\n\n\nInstru��es\n\n \n- Capit�o: " + name +  ", PRESTE MUITA ATEN��O! \nA dificuldade da nossa miss�o depende da arma que voc� escolher, uma arma mais forte te permitir� um abate preciso! "
-				+ "Por�m, um erro na mira e voc� j� era!");
-		System.out.println("\nUma arma mais fraca lhe permite mais estabilidade e torna mais dif�cil para o inimigo te detectar, isso lhe permite mais tentativas... ");
-		System.out.println("Essas s�o as armas em nosso arsenal:\r\n"
+		System.out.println("\n\n\n\nInstruções\n\n \n- Capitão: " + name +  ", PRESTE MUITA ATENÇÃO! \nA dificuldade da nossa missão depende da arma que você escolher, uma arma mais forte te permitirá um abate preciso! "
+				+ "Porém, um erro na mira e você já era!");
+		System.out.println("\nUma arma mais fraca lhe permite mais estabilidade e torna mais difícil para o inimigo te detectar, isso lhe permite mais tentativas... ");
+		System.out.println("Essas são as armas em nosso arsenal:\r\n"
 				+ "\r\n"
-				+ "Barrett M82 - (1 vida) 12,7�99mm NATO .416 Barrett\r\n"
-				+ "Dragunov Sniper rifle - ( 2 vidas) 7,62�54mmR\r\n"
-				+ "AWM - (1 vida) 7,62�67mm \r\n"
-				+ "VSK-94 - ( 3 vidas) 9�39mm\r\n"
+				+ "Barrett M82 - (1 vida) 12,7×99mm NATO .416 Barrett\r\n"
+				+ "Dragunov Sniper rifle - ( 2 vidas) 7,62×54mmR\r\n"
+				+ "AWM - (1 vida) 7,62×67mm \r\n"
+				+ "VSK-94 - ( 3 vidas) 9×39mm\r\n"
 				+ "");
 		
 	}
@@ -131,7 +168,7 @@ public class JogoRPG {
 		nomeJogador = input.nextLine();
 		do {
 
-			valueMenu = entradaDadosInt("\n(1) Jogar \n(2) Hist�ria \n(3) Instru��es \n(4) Cr�ditos \n(0) Sair");
+			valueMenu = entradaDadosInt("\n(1) Jogar \n(2) História \n(3) Instruções \n(4) Créditos \n(0) Sair");
 
 			switch (valueMenu) {
 			case 1:
@@ -141,7 +178,7 @@ public class JogoRPG {
 				historia();
 				break;
 			case 3:
-				instru��es(nomeJogador);
+				instruções(nomeJogador);
 				break;
 			case 4:
 				criadores();
@@ -150,7 +187,7 @@ public class JogoRPG {
 				System.out.print("A guerra ainda lhe espera!");
 				break;
 			default:
-				System.out.println("\nEssa bala n�o encaixa no pente, escolha outra!");
+				System.out.println("\nEssa bala não encaixa no pente, escolha outra!");
 			}
 		} while (valueMenu != 0);
 	}
