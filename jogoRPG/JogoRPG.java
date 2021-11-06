@@ -17,112 +17,123 @@ public class JogoRPG {
 	static void jogar() {
 		prologo();
 	}
-	
-		
-		static void historia() {
-	
+
+	static void historia() {
 
 	}
 
 	static void prologo() {
-		System.out.println("Tudo começou pelo amanhecer daquele dia que seria marcado para sempre nos livros de história: "
-				+ "\nO DIA QUE O BRASIL FOI INVADIDO!");
-		System.out.println("A Coalisão era um grupo de países que se reuniram em busca da cura da praga que afetou a produção mundial de café."
-				+ "\n Essa praga foi transmitida por fungos que eram propagados pelo ar por meio de esporos,"
-				+ "estes que em contato com os grãos, alteravam a genética e impossibilitavam o desenvolvimento do grão de café.");
-		
-		System.out.println("Naquela manhã, o Major se encontrava no quartel extremamente enfurecido! E pronto para dar as ordens para o seu fiel subordinado, o Capitão:");
-		
-		System.out.println ("\n-Major:- Capitão! venha até aqui. "
+		System.out.println(
+				"Tudo começou pelo amanhecer daquele dia que seria marcado para sempre nos livros de história: "
+						+ "\nO DIA QUE O BRASIL FOI INVADIDO!");
+		System.out.println(
+				"A Coalisão era um grupo de países que se reuniram em busca da cura da praga que afetou a produção mundial de café."
+						+ "\n Essa praga foi transmitida por fungos que eram propagados pelo ar por meio de esporos,"
+						+ "estes que em contato com os grãos, alteravam a genética e impossibilitavam o desenvolvimento do grão de café.");
+
+		System.out.println(
+				"Naquela manhã, o Major se encontrava no quartel extremamente enfurecido! E pronto para dar as ordens para o seu fiel subordinado, o Capitão:");
+
+		System.out.println("\n-Major:- Capitão! venha até aqui. "
 				+ "\n Precisamos alocar o quanto antes o novo soldado da classe Sniper no batalhão.");
 		System.out.println("-Capitão: Certo! Irei fazer isso! Inclusive, qual o seu nome, filho?");
-		
+
 		System.out.println("-Personagem: " + nomeJogador);
-		
+
 		System.out.println("-Major: " + nomeJogador + "? Hahahaha!! Isso aqui é uma guerra! "
 				+ "\nAqueles selvagens estão nos atacando e vocês vão ficar trocando figurinhas sobre um ao outro? "
 				+ "\nAqui você vai ser o soldado 06!” Gritou.");
-		
+
 		System.out.println("E depois de ser apresentado ao quartel, 06 começou o seu treinamento junto com o capitão. "
 				+ "\n Uma pena que eles não puderam continuar a conversa, pois ali próximo as tropas da coalisão"
 				+ "\n estavam invadindo o terreno. Eram milhares de soldados descendo pelo céu de paraquedas.");
-		
-		
-		
 
 	}
 
 	static void instruções(String name) {
-		System.out.println("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMWWNNNNNNNNNNXXXXXXXXXXKKKKKKKKKKKKKKKKKKKK0KKKK000000000000KKKKKKKKK0000000000KKKKKKXXNNWWMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMKoc:;;,,,,,,,,,''''''''................''',,,,,,,,,'.....',',,,,,,,,,'',;;,,;;;;;;,'',,;;::clloodxkO0KXXNNWWMMMMMMM\r\n"
-				+ "MMMMWOolc;,'........''',,,,;;;;;;;;:::::::::ccllllllllllllccclooooooooooooloodddddddxxddooooooooooooooooddxxkkO00KWMMMMM\r\n"
-				+ "MMMMWOooolccccdxxkkkkOOOO0000000000000000000000000000000000000OOOOOOOOOOOOOOkkkOOkkOOOkkkkkkkkkkkkkkkkxxkkkkkkkkkONMMMMM\r\n"
-				+ "MMMMWk:cc:;;;ckOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOkkOOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxoccokxdxkkkxONMMMMM\r\n"
-				+ "MMMMWO:;;;clclkOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOkkkOOkOkkkkkkkkkkkkkkkkkkxxxxxxxxxxxddddddoc;:okddxkkkxONMMMMM\r\n"
-				+ "MMMMWKxdoloxxdkOOOOOOxddddddddddoodddddddddddddddddddddddddddddddooooodddddddddddddddddddddddddddddol:,:oxddxkkkxONMMMMM\r\n"
-				+ "MMMMWKxxxoodddkOOOOOkolddddddxxxxxxxxxxxxxxxkkkkkkkkkkkkkkkkkkkkkkkkkkOOOOOOOOOOOOOOOOOOOOOkOOOkkkkkxl:cdkddkkkkk0NMMMMM\r\n"
-				+ "MMMMMKxxdoodddkOOOOOkodOOOOOOOOOOOOOOOOOOOOOOOOOOkOOOOkOkkOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdc:cdkddxkkkk0WMMMMM\r\n"
-				+ "MMMMMKxddooddokOOOOOOodOOOOOOOOOOOOOOOOOOOOOOOOOkOOOkkkOOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdl:coxooxkkkk0WMMMMM\r\n"
-				+ "MMMMMKxddoloookOOOOOkooOOkkOOOOOOOOOOOOOOOkkOOOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdooddcokkkkk0WMMMMM\r\n"
-				+ "MMMMMKddooloooxOOOOOkookOOkkkkkkkkOOkkOOkkkOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxlokkkkk0WMMMMM\r\n"
-				+ "MMMMMKdoolllllxOOOOOkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxkdldkkkkk0WMMMMM\r\n"
-				+ "MMMMMKdoolllllxOOkkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdddxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxkdldkkkkkKWMMMMM\r\n"
-				+ "MMMMMKolllccclxOkkkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxddxkxolllodxkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxkdldkkkkkKWMMMMM\r\n"
-				+ "MMMMM0:,,;:::cxOkOkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdkOkxxddoolooclxkkkkkkkkkkkkkkkkkkkkkkxxxxxxxxkdldkkkkkKWMMMMM\r\n"
-				+ "MMMMMO,...,;;:xOkkkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkOO00OdoxkxxxdddocoxkkkkkkkkkkkkkxxxkkxkkxxxxxxxxkdldkkkkkKWMMMMM\r\n"
-				+ "MMMMMO,...',,:dOkkkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdodxkkkkkxdoddxkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxdldkkkkkKWMMMMM\r\n"
-				+ "MMMMM0,...',,;dOkkkkkolkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxlc:,;:coxxxxxxxdlodxkkkkkkkkxxxxxxxxxxxxxxxxxxxxxoldkkkkkKMMMMMM\r\n"
-				+ "MMMMM0;.'',,,;dOkOkkOolkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxl:;;;;;;ldxxxxdlccdkkkkkkkkkxkkxxxxxxxxxxxxxxxxxxoldkkkkkKMMMMMM\r\n"
-				+ "MMMMM0:......,dOkkkkkolxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdc;::;,,;codoooxdoxkxkxxxkxxxxxxxxxxxxxxxxxxxxxxxoldkkkkkKMMMMMM\r\n"
-				+ "MMMMM0;......,okkkkkkolxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdcloddoooodxkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxolxkkkkkKMMMMMM\r\n"
-				+ "MMMMMK;......'okkkkkkooxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdooxkkkkOOxdxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxolxkkkkkKMMMMMM\r\n"
-				+ "MMMMMK;......'okkkkkkdlxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxkkxkkxxddxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxlcxkkkkkXMMMMMM\r\n"
-				+ "MMMMMK;......'okkkkkkdlxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxllxkxkkkXMMMMMM\r\n"
-				+ "MMMMMK;......'okkkkkkdlxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxllxkxkxkXMMMMMM\r\n"
-				+ "MMMMMX:......'lkkkkkkdlxkkkkkkkkkkkkkxxxxxxxddxxxxkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxxxxddxxxxxxxxxxxxxxxxxxxxccxxxkxkXMMMMMM\r\n"
-				+ "MMMMMXc......'lkkkkkkdlxkkkkkkkkkkxxxdddol:::::codxxxkkkkkkkkxxxxxxxxxxxxxxxxxxxxkxdlccoxxxxxxxxxxxxxxxxdclxxxxxkXMMMMMM\r\n"
-				+ "MMMMMXc......'lkkkkkkdlxkkkkkkkxxxxdoolc:cccooc::codxxxxxxxxxxxxxxxxxxxxxxxxxxxddooo;..;oxxxxxxxxxxxxxxxdclxxxxxkXMMMMMM\r\n"
-				+ "MMMMMNc......'lkkkkkkdlxkkkkkkkxxxdoll:,;looddlcc:coxxxxxxxxxxxxxxxxxxxxxxxxxxddo:,,...,lddxxxxxxxxxxxxxdclxxxxxkXMMMMMM\r\n"
-				+ "MMMMMNl......'lkkkkkkdlxkxkxxxxxxxdolc::clddoooooddddxxxxxxxxxxxxxxxxxxxxxxxxddddollc;.,oddxxxxxxxxxxxxxdclxxxxxkNMMMMMM\r\n"
-				+ "MMMMMNl......'ckkkkkkdlxkxkkxxxxxxdolcldxdlc:cox0XOddxxxxxxxxxxxxxxxxxxxxxxxxxddddddddlodddxxxxxxxxxxxxxdclxxxxxkNMMMMMM\r\n"
-				+ "MMMMMNl.......cxkkkkkdldkxxxxxxxxxddoclxKOdoookXNKxdxxxxxxxxxxxxxxxxxxxxxxxxxxxddddddocldxxxxxxxxxxxxxxxdclxxxxxONMMMMMM\r\n"
-				+ "MMMMMWo.......cxkkkkkdldkxxxxxxxxxxddolldO000KK0kdxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddd:..cdddxxxxxxxxxxxxdclxxxxxONMMMMMM\r\n"
-				+ "MMMMMWo.......:xkkkkkdldkxxxxxxxxxxxxxxddoddddddxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddddo;..cdddddddxxxxxxxxdcoxxxxxONMMMMMM\r\n"
-				+ "MMMMMKc.......:xkkkxkdldkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxddddddddddc..cxdddxxxxxxolllllcoxxxxxONMMMMMM\r\n"
-				+ "MMMMM0;.......:xkkkxkdldkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddddddo:cdxxxxxxxxxdlcclooloxxxxxONMMMMMM\r\n"
-				+ "MMMMMWx'......:xkxxxkdldkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddxoldxxxxxxxxxxdlcclxxodxxxxxONMMMMMM\r\n"
-				+ "MMMMMMNo......;dkxxxkdldkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdodxdddddddoooc:clxxooxxxxxONMMMMMM\r\n"
-				+ "MMMMMMMK:.....;dkxxxkdldxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddooooooooooooooooooodddddddool:;:lxxooxxxxdONMMMMMM\r\n"
-				+ "MMMMMMMMO;....;dxxxxxdldxxxxxxxxxxxxxxxddddddddoooooooooooooooooodddddddddddddddxxxxxxkkkkkkkkkkkkxoccoxxloxddddkNMMMMMM\r\n"
-				+ "MMMMMMMMWx'...;dxxxxxdlodoodoooooddddddddddddddddddddxxxxxxxxkkkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxolclddodddddddKMMMMMM\r\n"
-				+ "MMMMMMMMMNd...,oxxxxxxddddddddxxxxxxxxkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxddxxxkkkOOOOOXMMMMMM\r\n"
-				+ "MMMMMMMMMMXl..,oxxxxdxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxkkkkOOO00000KKKXXXXNNNNWWWWWMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMK:.,lxddxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxkkkkkOOO00000KKKKXXXNNNNWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMWO;;oxxxxxxxxxxxxxxxxxxxxxxkkkkOOO00000KKKXXXXNNNNNWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMMWOdkkkkkOOOOO0000KKKXXXNNNNNWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
-				+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
-		
-		System.out.println("\n\n\n\nInstruções\n\n \n- Capitão: " + name +  ", PRESTE MUITA ATENÇÃO! \nA dificuldade da nossa missão depende da arma que você escolher, uma arma mais forte te permitirá um abate preciso! "
+		System.out.println(
+				"MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMWWNNNNNNNNNNXXXXXXXXXXKKKKKKKKKKKKKKKKKKKK0KKKK000000000000KKKKKKKKK0000000000KKKKKKXXNNWWMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMKoc:;;,,,,,,,,,''''''''................''',,,,,,,,,'.....',',,,,,,,,,'',;;,,;;;;;;,'',,;;::clloodxkO0KXXNNWWMMMMMMM\r\n"
+						+ "MMMMWOolc;,'........''',,,,;;;;;;;;:::::::::ccllllllllllllccclooooooooooooloodddddddxxddooooooooooooooooddxxkkO00KWMMMMM\r\n"
+						+ "MMMMWOooolccccdxxkkkkOOOO0000000000000000000000000000000000000OOOOOOOOOOOOOOkkkOOkkOOOkkkkkkkkkkkkkkkkxxkkkkkkkkkONMMMMM\r\n"
+						+ "MMMMWk:cc:;;;ckOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOkkOOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxoccokxdxkkkxONMMMMM\r\n"
+						+ "MMMMWO:;;;clclkOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOkkkOOkOkkkkkkkkkkkkkkkkkkxxxxxxxxxxxddddddoc;:okddxkkkxONMMMMM\r\n"
+						+ "MMMMWKxdoloxxdkOOOOOOxddddddddddoodddddddddddddddddddddddddddddddooooodddddddddddddddddddddddddddddol:,:oxddxkkkxONMMMMM\r\n"
+						+ "MMMMWKxxxoodddkOOOOOkolddddddxxxxxxxxxxxxxxxkkkkkkkkkkkkkkkkkkkkkkkkkkOOOOOOOOOOOOOOOOOOOOOkOOOkkkkkxl:cdkddkkkkk0NMMMMM\r\n"
+						+ "MMMMMKxxdoodddkOOOOOkodOOOOOOOOOOOOOOOOOOOOOOOOOOkOOOOkOkkOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdc:cdkddxkkkk0WMMMMM\r\n"
+						+ "MMMMMKxddooddokOOOOOOodOOOOOOOOOOOOOOOOOOOOOOOOOkOOOkkkOOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdl:coxooxkkkk0WMMMMM\r\n"
+						+ "MMMMMKxddoloookOOOOOkooOOkkOOOOOOOOOOOOOOOkkOOOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdooddcokkkkk0WMMMMM\r\n"
+						+ "MMMMMKddooloooxOOOOOkookOOkkkkkkkkOOkkOOkkkOkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxlokkkkk0WMMMMM\r\n"
+						+ "MMMMMKdoolllllxOOOOOkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxkdldkkkkk0WMMMMM\r\n"
+						+ "MMMMMKdoolllllxOOkkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdddxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxkdldkkkkkKWMMMMM\r\n"
+						+ "MMMMMKolllccclxOkkkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxddxkxolllodxkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxkdldkkkkkKWMMMMM\r\n"
+						+ "MMMMM0:,,;:::cxOkOkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdkOkxxddoolooclxkkkkkkkkkkkkkkkkkkkkkkxxxxxxxxkdldkkkkkKWMMMMM\r\n"
+						+ "MMMMMO,...,;;:xOkkkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkOO00OdoxkxxxdddocoxkkkkkkkkkkkkkxxxkkxkkxxxxxxxxkdldkkkkkKWMMMMM\r\n"
+						+ "MMMMMO,...',,:dOkkkkkookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdodxkkkkkxdoddxkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxdldkkkkkKWMMMMM\r\n"
+						+ "MMMMM0,...',,;dOkkkkkolkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxlc:,;:coxxxxxxxdlodxkkkkkkkkxxxxxxxxxxxxxxxxxxxxxoldkkkkkKMMMMMM\r\n"
+						+ "MMMMM0;.'',,,;dOkOkkOolkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxl:;;;;;;ldxxxxdlccdkkkkkkkkkxkkxxxxxxxxxxxxxxxxxxoldkkkkkKMMMMMM\r\n"
+						+ "MMMMM0:......,dOkkkkkolxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdc;::;,,;codoooxdoxkxkxxxkxxxxxxxxxxxxxxxxxxxxxxxoldkkkkkKMMMMMM\r\n"
+						+ "MMMMM0;......,okkkkkkolxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdcloddoooodxkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxolxkkkkkKMMMMMM\r\n"
+						+ "MMMMMK;......'okkkkkkooxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxdooxkkkkOOxdxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxolxkkkkkKMMMMMM\r\n"
+						+ "MMMMMK;......'okkkkkkdlxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxkkxkkxxddxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxlcxkkkkkXMMMMMM\r\n"
+						+ "MMMMMK;......'okkkkkkdlxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxllxkxkkkXMMMMMM\r\n"
+						+ "MMMMMK;......'okkkkkkdlxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxllxkxkxkXMMMMMM\r\n"
+						+ "MMMMMX:......'lkkkkkkdlxkkkkkkkkkkkkkxxxxxxxddxxxxkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxxxxddxxxxxxxxxxxxxxxxxxxxccxxxkxkXMMMMMM\r\n"
+						+ "MMMMMXc......'lkkkkkkdlxkkkkkkkkkkxxxdddol:::::codxxxkkkkkkkkxxxxxxxxxxxxxxxxxxxxkxdlccoxxxxxxxxxxxxxxxxdclxxxxxkXMMMMMM\r\n"
+						+ "MMMMMXc......'lkkkkkkdlxkkkkkkkxxxxdoolc:cccooc::codxxxxxxxxxxxxxxxxxxxxxxxxxxxddooo;..;oxxxxxxxxxxxxxxxdclxxxxxkXMMMMMM\r\n"
+						+ "MMMMMNc......'lkkkkkkdlxkkkkkkkxxxdoll:,;looddlcc:coxxxxxxxxxxxxxxxxxxxxxxxxxxddo:,,...,lddxxxxxxxxxxxxxdclxxxxxkXMMMMMM\r\n"
+						+ "MMMMMNl......'lkkkkkkdlxkxkxxxxxxxdolc::clddoooooddddxxxxxxxxxxxxxxxxxxxxxxxxddddollc;.,oddxxxxxxxxxxxxxdclxxxxxkNMMMMMM\r\n"
+						+ "MMMMMNl......'ckkkkkkdlxkxkkxxxxxxdolcldxdlc:cox0XOddxxxxxxxxxxxxxxxxxxxxxxxxxddddddddlodddxxxxxxxxxxxxxdclxxxxxkNMMMMMM\r\n"
+						+ "MMMMMNl.......cxkkkkkdldkxxxxxxxxxddoclxKOdoookXNKxdxxxxxxxxxxxxxxxxxxxxxxxxxxxddddddocldxxxxxxxxxxxxxxxdclxxxxxONMMMMMM\r\n"
+						+ "MMMMMWo.......cxkkkkkdldkxxxxxxxxxxddolldO000KK0kdxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddd:..cdddxxxxxxxxxxxxdclxxxxxONMMMMMM\r\n"
+						+ "MMMMMWo.......:xkkkkkdldkxxxxxxxxxxxxxxddoddddddxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddddo;..cdddddddxxxxxxxxdcoxxxxxONMMMMMM\r\n"
+						+ "MMMMMKc.......:xkkkxkdldkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxddddddddddc..cxdddxxxxxxolllllcoxxxxxONMMMMMM\r\n"
+						+ "MMMMM0;.......:xkkkxkdldkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddddddo:cdxxxxxxxxxdlcclooloxxxxxONMMMMMM\r\n"
+						+ "MMMMMWx'......:xkxxxkdldkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddxoldxxxxxxxxxxdlcclxxodxxxxxONMMMMMM\r\n"
+						+ "MMMMMMNo......;dkxxxkdldkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdodxdddddddoooc:clxxooxxxxxONMMMMMM\r\n"
+						+ "MMMMMMMK:.....;dkxxxkdldxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddooooooooooooooooooodddddddool:;:lxxooxxxxdONMMMMMM\r\n"
+						+ "MMMMMMMMO;....;dxxxxxdldxxxxxxxxxxxxxxxddddddddoooooooooooooooooodddddddddddddddxxxxxxkkkkkkkkkkkkxoccoxxloxddddkNMMMMMM\r\n"
+						+ "MMMMMMMMWx'...;dxxxxxdlodoodoooooddddddddddddddddddddxxxxxxxxkkkkkkkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxolclddodddddddKMMMMMM\r\n"
+						+ "MMMMMMMMMNd...,oxxxxxxddddddddxxxxxxxxkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxddxxxkkkOOOOOXMMMMMM\r\n"
+						+ "MMMMMMMMMMXl..,oxxxxdxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxkkkkOOO00000KKKXXXXNNNNWWWWWMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMK:.,lxddxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxkkkkkOOO00000KKKKXXXNNNNWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMWO;;oxxxxxxxxxxxxxxxxxxxxxxkkkkOOO00000KKKXXXXNNNNNWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMMWOdkkkkkOOOOO0000KKKXXXNNNNNWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\r\n"
+						+ "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
+
+		System.out.println("\n\n\n\nInstruções\n\n \n- Capitão: " + name
+				+ ", PRESTE MUITA ATENÇÃO! \nA dificuldade da nossa missão depende da arma que você escolher, uma arma mais forte te permitirá um abate preciso! "
 				+ "Porém, um erro na mira e você já era!");
-		System.out.println("\nUma arma mais fraca lhe permite mais estabilidade e torna mais difícil para o inimigo te detectar, isso lhe permite mais tentativas... ");
-		System.out.println("Essas são as armas em nosso arsenal:\r\n"
-				+ "\r\n"
+		System.out.println(
+				"\nUma arma mais fraca lhe permite mais estabilidade e torna mais difícil para o inimigo te detectar, isso lhe permite mais tentativas... ");
+		System.out.println("Essas são as armas em nosso arsenal:\r\n" + "\r\n"
 				+ "Barrett M82 - (1 vida) 12,7×99mm NATO .416 Barrett\r\n"
-				+ "Dragunov Sniper rifle - ( 2 vidas) 7,62×54mmR\r\n"
-				+ "AWM - (1 vida) 7,62×67mm \r\n"
-				+ "VSK-94 - ( 3 vidas) 9×39mm\r\n"
-				+ "");
-		
+				+ "Dragunov Sniper rifle - ( 2 vidas) 7,62×54mmR\r\n" + "AWM - (1 vida) 7,62×67mm \r\n"
+				+ "VSK-94 - ( 3 vidas) 9×39mm\r\n" + "");
+
 	}
 
 	static void criadores() {
+		int value = 0;
+		while (value != 1) {
+			System.out.println("Projeto Integrador (P.I)");
+			System.out.println("Turma 1ºA TADS - Noturno, 2º Semestre, 2021");
+			System.out.println("Desenvolvido por Bruna Vieira, Reidiney Silva, William Berg e Victor Beccare ");
 
+			value = entradaDadosInt("\n(1) Voltar");
+
+			if (value != 1) {
+				System.out.println("\nOpção inválida!");
+			} else {
+				menu();
+			}
+		}
 	}
 
 	static void menu() {
