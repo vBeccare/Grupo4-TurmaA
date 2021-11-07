@@ -1,6 +1,9 @@
 package jogoRPG;
 
 import java.util.Scanner;
+import java.util.Random;
+import java.util.Collections;
+import java.util.ArrayList;
 
 public class JogoRPG {
 	// variaveis globais que usaremos em diversas partes do jogo
@@ -10,8 +13,103 @@ public class JogoRPG {
 	// Método para entradas de números
 	static int entradaDadosInt(String text) {
 		System.out.println(text);
-		int numberInput = input.nextInt();
-		return numberInput;
+		return input.nextInt();
+
+	}
+
+	// Método para entrada de String
+	static String entradaDadosStr(String text) {
+		System.out.println(text);
+		return input.next();
+
+	}
+
+	//gerar numero aleatorio
+	static int gerarNumero(int valorMaximo) {
+		int numeroAleatorio;
+		Random sorteio = new Random();
+		numeroAleatorio = sorteio.nextInt(valorMaximo);
+		return numeroAleatorio;
+	}
+
+	
+	//formular logica de pergunta
+	static void formularPergunta(int[][] alternativas, int numeroQuestao, int valorPergunta, int valorResposta) {
+		ArrayList<Integer> listaResposta = new ArrayList<Integer>();
+
+		for (int j = 0; j < alternativas[0].length; j++) {
+			listaResposta.add(alternativas[numeroQuestao][j]);
+
+		}
+
+		Collections.shuffle(listaResposta);
+
+		System.out.println(
+				"Para abrir o cadeado, converta os seguintes dígitos de binário para decimal: \n" + valorPergunta);
+
+		for (int i = 0; i < listaResposta.size(); i++) {
+			switch (i) {
+			case 0:
+				System.out.println("\nA) " + listaResposta.get(i));
+				break;
+			case 1:
+				System.out.println("B) " + listaResposta.get(i));
+				break;
+			case 2:
+				System.out.println("C) " + listaResposta.get(i));
+				break;
+			case 3:
+				System.out.println("D) " + listaResposta.get(i));
+				break;
+			case 4:
+				System.out.println("E) " + listaResposta.get(i));
+				break;
+			}
+
+		}
+
+		String respostaJogador = entradaDadosStr("").toUpperCase();
+		int index = 0;
+
+		switch (respostaJogador) {
+
+		case "A":
+			index = 0;
+			break;
+		case "B":
+			index = 1;
+			break;
+		case "C":
+			index = 2;
+			break;
+		case "D":
+			index = 3;
+			break;
+		case "E":
+			index = 4;
+			break;
+		}
+
+		if (listaResposta.get(index) == valorResposta) {
+			System.out.println("Resposta Correta");
+
+		} else {
+			System.out.println("Resposta incorreta");
+		}
+
+	}
+
+	// espaço para trabalhar com as perguntas
+	static void desafio1(int numeroQuestao) {
+
+		int[] valoresPergunta = { 10110110, 10111100, 01111111, 10010110, 11011100 };
+		int[] valoresResposta = { 182, 188, 127, 150, 220 };
+		int valorPergunta = valoresPergunta[numeroQuestao];
+		int valorResposta = valoresResposta[numeroQuestao];
+		int[][] alternativas = new int[][] { { 182, 181, 176, 170, 175 }, { 188, 185, 190, 181, 182 },
+				{ 127, 128, 129, 130, 131 }, { 150, 145, 148, 152, 153 }, { 221, 230, 220, 231, 227 } };
+
+		formularPergunta(alternativas, numeroQuestao, valorPergunta, valorResposta);
 
 	}
 
@@ -46,11 +144,47 @@ public class JogoRPG {
 
 	}
 
+	static void historiaParte1() {
+		int numeroSorteado = gerarNumero(4);
+		System.out.println("\n\n");
+		System.out.println("    ___            __                         __     \r\n"
+				+ "   /   |     _____/ /_  ___  ____ _____ _____/ /___ _\r\n"
+				+ "  / /| |    / ___/ __ \\/ _ \\/ __ `/ __ `/ __  / __ `/\r\n"
+				+ " / ___ |   / /__/ / / /  __/ /_/ / /_/ / /_/ / /_/ / \r\n"
+				+ "/_/  |_|   \\___/_/ /_/\\___/\\__, /\\__,_/\\__,_/\\__,_/  \r\n"
+				+ "                          /____/                     ");
+		System.out.println("\n\n");
+		System.out.println("\r\n"
+				+ "O Major foi informado de que o plano da coalisão era conseguir roubar o antídoto que estava sendo desenvolvido ali em Três corações, "
+				+ "\ne posteriormente pousariam no aeroporto de Mogi para pegar a outra parte da pesquisa. Ali os paraquedistas se reuniriam com as tropas de Mogi, "
+				+ "\ne viriam em comboios para Paraty, onde sumiriam por meio de navios que os aguardavam na praia.\r\n"
+				+ "\r\n"
+				+ "O plano da coalisão era trazer tropas por meio da praia para conseguir fazer a retaguarda dos soldados que roubaram a cura. "
+				+ "\nEstes soldados tentariam a qualquer custo retardar as tropas brasileiras que os seguiam.\r\n"
+				+ "\r\n"
+				+ "“Estes desgraçados querem nos roubar para depois bancar os bons moços! Isso não vai ficar assim!!” Gritou Major ao telefone com um de seus subordinados.\r\n"
+				+ "\r\n"
+				+ "Pouco depois, Capitão e 06 foram ordenados pelo Major e se deslocarem imediatamente para o campo de batalha, "
+				+ "\npois foi informado que um Sniper já havia abatido mais de 20 soldados.\r\n" + "\r\n"
+				+ "-Major: Capitão, eu te ordeno a eliminar este cretino! O infeliz já matou mais que a peste negra! Estou perdendo muitos homens!!!\r\n"
+				+ "\r\n" + "Certo, estamos a caminho! “Disse o Capitão”\r\n" + "\r\n"
+				+ "-06: Capitão! O que faremos?\r\n" + "\r\n"
+				+ "-Capitão: Agora iremos para o arsenal, você precisará de escolher um rifle para o combate.\r\n"
+				+ "\r\n"
+				+ "-E antes que eu me esqueça, implementamos recentemente novas senhas nos cofres, você precisará de responder corretamente a pergunta feita para abrir o seu cofre."
+				+ "\n Tome muito cuidado! Pois se você errar 3 vezes seu cofre ficará trancado para sempre!\r\n"
+				+ "\r\n" + "-06: Entendido Capitão!\r\n");
+
+		desafio1(numeroSorteado);
+
+	}
+
 	// ------- aqui termina os metodos usados no jogar -------
 
 	// metodo para rodar o jogo
 	static void jogar() {
 		prologo();
+		historiaParte1();
 	}
 
 	// metodo para mostrar como será a história do jogo
@@ -165,13 +299,13 @@ public class JogoRPG {
 			}
 		}
 	}
-	
-	//metodo que mostra o menu
+
+	// metodo que mostra o menu
 	static void menu() {
 		int valueMenu;
 
 		do {
-			//somente pedir o nome do jogador caso ainda ele não tenha digitado
+			// somente pedir o nome do jogador caso ainda ele não tenha digitado
 			if (nomeJogador.equals("")) {
 				System.out.println("Informe o seu nome: ");
 				nomeJogador = input.nextLine();
@@ -253,6 +387,7 @@ public class JogoRPG {
 				break;
 			case 0:
 				System.out.print("A guerra ainda lhe espera!");
+				System.exit(0);
 				break;
 			default:
 				System.out.println("\nEssa bala não encaixa no pente, escolha outra!");
