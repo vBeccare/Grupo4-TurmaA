@@ -427,7 +427,7 @@ public class JogoRPG {
 	}
 
 	static void historiaParte3() {
-		//verificar se essa é a parte da historia
+		// teste verificar se essa é a parte 3 da historia
 		
 		/*System.out.println( " Depois da escalada, Capitão e 06 se posicionaram atrás de uma rocha que serviria de cobertura. E enquanto se prepararam, 06 viu algo que mudaria completamente o seu comportamento.
 		 
@@ -440,6 +440,56 @@ public class JogoRPG {
 	}
 
 	static void historiaParte4() {
+		// teste verificar se essa é a parte 4 da historia
+		
+		/* System.out.println( " Surpreso pelo tiro certeiro, Capitão chamou a atenção de 06 pela atitude inesperada, e o repreendeu.
+
+- “Seu imprudente! Já pensou se você erra e ele nos fuzila? O que seria da missão e do resto do batalhão? Seu maluco!!!” Exclamou o capitão com uma certa admiração pela boa pontaria.
+
+- 06: Ele matou o meu amigo! Você não faria o mesmo?
+
+- Capitão: Cara eu só não vou te reportar para o Major por você ter sido eficiente, mas saiba que aqui a gente não faz o que dá na telha! A gente segue ordens! Entendido?
+
+- “Sim senhor capitão!” Exclamou 06 prestando continência.
+
+Depois deste combate, os dois seguiram para a região de Mogi para deter o desembarque das tropas que aterrissariam em aviões, era preciso ser rápido pois a segunda parte da cura ainda corria risco.
+
+
+
+•	Eu não preciso dominar o mundo, só preciso ajudar o meu país
+
+
+06 e Capitão partiram em disparada, eles precisavam de chegar em Mogi o quanto antes, pois como o ataque da coalisão foi muito mal coordenado, o Major acreditava que era possível encurralar as tropas e expulsá-las para as praias de Paraty, ou até mesmo capturá-las. Mas independente do método, era de suma importância que os Franco-Atiradores inimigos fossem eliminados.
+
+Enquanto Capitão dirigia o caminhão militar com os demais soltados na caçamba, 06 estava no banco do carona pensando em como seria a batalha, ele parecia um pouco ansioso
+
+- Capitão: 06! O que você tanto pensa aí? Não acha que está um pouco quieto demais?
+
+- “Não Capitão, eu só estou me preparando para o combate” disse 06 com um pouco de medo.
+
+- Capitão: Cara, eu sei que você está com medo, mas pensa bem. Se a gente sair daqui a gente pode montar uma empresa, abrir um negócio, ficar ricos e dominar o mundo! São infinitas as possibilidades! 
+
+Mas isso só vai acontecer se a gente se sair bem e conseguir vencer essa batalha!!! Ânimo 06!
+
+- “Tudo bem Capitão!” disse 06 mais confiante.
+
+
+Ao chegar em Mogi a guerra já estava ocorrendo no aeroporto, porém dessa vez a coalisão estava totalmente perdida, pois já havia tropas advindas de Campinas e São Paulo combatendo no local.
+Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transformou em uma máquina! Uma besta enjaulada com ódio! Não deixando uma alma viva sequer no seu caminho!
+
+(Imagem do 06 putasso!!)
+
+- Capitão: 06! Inimigo às 2 horas!!
+
+- 06: Inimigo abatido!
+
+- Capitão: Boa 06! Agora tenha cuidado! Inimigo avistado às 12 horas!!
+
+- 06: Inimigo abatido!
+
+- Capitão: Também atirando com o meu fuzil fica fácil! Agora elimina aquele ali que está às 10 horas lá na guarita.
+
+*/
 
 	}
 
