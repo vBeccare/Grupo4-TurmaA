@@ -51,7 +51,15 @@ public class JogoRPG {
 
 	// metodo para trabalhar com as tentativas das questões de tiro
 	static void statusVida() {
-
+		vida--;
+		if (vida == 2) {
+			System.out.println("\nCuidado! Mire direito! O inimigo pode te encontrar!");
+		} else if (vida == 1) {
+			System.out.println("\nSoldado, seja mais preciso, os inimigos escutaram e estão te procurando!!");
+		} else if (vida == 0) {
+			System.out.println("\nOs inimigos te encontraram, fim da linha!");
+			System.exit(0);
+		}
 	}
 
 	// metodo para trabalhar com as tentativas da questão de escalada
