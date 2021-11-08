@@ -427,7 +427,16 @@ public class JogoRPG {
 	}
 
 	static void historiaParte3() {
+		//verificar se essa é a parte da historia
+		
+		/*System.out.println( " Depois da escalada, Capitão e 06 se posicionaram atrás de uma rocha que serviria de cobertura. E enquanto se prepararam, 06 viu algo que mudaria completamente o seu comportamento.
+		 
+	 	- Capitão: Precisamos encontrar esse Sniper o quanto antes! Prepare o seu fuzil enquanto eu o localizo com o binóculo.
 
+		- 06: Certo! Ei espera... aquele ali não é o meu vizinho?
+
+		/*Naquele momento 06 viu o seu vizinho e amigo de quartel sendo morto pelo Sniper, como se não bastasse ter visto aquela cena, ele também conseguiu localizar o atirador. Enfurecido, ele tomou agiu imediatamente, se posicionou e se preparou para atirar.*/
+		
 	}
 
 	static void historiaParte4() {
