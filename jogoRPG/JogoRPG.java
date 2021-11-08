@@ -318,8 +318,23 @@ public class JogoRPG {
 		}
 
 	
+		static void desafio6(int numeroQuestao6) {
+	        // valores que podem ser utilizados na pergunta
+	        String[] valoresPergunta6 = { "A=√(√6-2). √(2+√6)" };
 
-	static void desafio6(int numeroQuestao) {
+	        // valores que podem ser utilizados na resposta
+	        String[] valoresResposta6 = { "02" };
+
+	        // passando o mesmo valor para pergunta e resposta para ter o valor correto
+	        String valorPergunta6 = valoresPergunta6[numeroQuestao6];
+	        String valorResposta6 = valoresResposta6[numeroQuestao6];
+
+	        // valores que podem aparecer como opcao de alternativas
+	        String[][] alternativas6 = new String[][] {{  "01", "02", "36", "12" }};
+
+	        String pergunta6 = "\n Se A=√(√6-2). √(2+√6), então o valor de A é: ";
+
+	        formularPergunta(alternativas6, numeroQuestao6, valorPergunta6, valorResposta6, pergunta6, "cadeado");
 
 	}
 
