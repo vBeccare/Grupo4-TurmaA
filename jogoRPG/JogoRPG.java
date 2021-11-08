@@ -270,10 +270,27 @@ public class JogoRPG {
 		
 		
 		String pergunta3 = "\nDado um valor X em hexadecimal, converta o número para octal: \n";
-		formularPergunta3(alternativas3, numeroQuestao3, valorPergunta3, valorResposta3, pergunta3, "cadeado");
+		formularPergunta(alternativas3, numeroQuestao3, valorPergunta3, valorResposta3, pergunta3, "cadeado");
 	}
 
-	static void desafio4(int numeroQuestao) {
+	static void desafio4(int numeroQuestao4) {
+		// valores que podem ser utilizados na pergunta
+		String[] valoresPergunta4 = { "1100 1110 1010", "1110 0100 1010", "1011 1111 1111" };
+
+		// valores que podem ser utilizados na resposta
+		String[] valoresResposta4 = { "CEA", "E4A", "BFF" };
+
+		// passando o mesmo valor para pergunta e resposta para ter o valor correto
+		String valorPergunta4 = valoresPergunta4[numeroQuestao4];
+		String valorResposta4 = valoresResposta4[numeroQuestao4];
+
+		// valores que podem aparecer como opcao de alternativas
+		String[][] alternativas4 = new String[][] { { "CEB", "CEA", "CED", "CEB", "CEF" },
+							{ "E48", "E49", "E4A", "EAB", "E4C" }, { "BFB", "BFC", "BFD", "BFE", "BFF" }};
+
+		String pergunta4 = "\nDado valor em binário, qual valor em hexa: \n";
+
+		formularPergunta(alternativas4, numeroQuestao4, valorPergunta4, valorResposta4, pergunta4, "cadeado");
 
 	}
 
