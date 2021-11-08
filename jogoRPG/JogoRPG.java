@@ -135,8 +135,8 @@ public class JogoRPG {
 	}
 
 	// formular logica de pergunta
-	static void formularPergunta(String[][] alternativas, int numeroQuestao, String valorPergunta, String valorResposta,
-			String pergunta, String desafio) {
+	static void formularPergunta(String[][] alternativas, int numeroQuestao, String valorResposta, String pergunta,
+			String desafio) {
 		ArrayList<String> listaResposta = new ArrayList<String>();
 
 		// convertendo array para ArrayList para utilizar o Collections
@@ -152,7 +152,7 @@ public class JogoRPG {
 		// diferente do que ele respondeu
 
 		do {
-			System.out.println(pergunta + valorPergunta);
+			System.out.println(pergunta);
 
 			// código para mostrar as alternativas sorteadas
 			for (int i = 0; i < listaResposta.size(); i++) {
@@ -243,9 +243,10 @@ public class JogoRPG {
 				{ "188", "185", "190", "181", "182" }, { "127", "128", "129", "130", "131" },
 				{ "150", "145", "148", "152", "153" }, { "221", "230", "220", "231", "227" } };
 
-		String pergunta = "\nPara abrir o cadeado, converta os seguintes dígitos de binário para decimal: \n";
+		String pergunta = "\nPara abrir o cadeado, converta os seguintes dígitos de binário para decimal: \n"
+				+ valorPergunta;
 
-		formularPergunta(alternativas, numeroQuestao, valorPergunta, valorResposta, pergunta, "cadeado");
+		formularPergunta(alternativas, numeroQuestao, valorResposta, pergunta, "cadeado");
 
 	}
 
@@ -256,21 +257,20 @@ public class JogoRPG {
 	static void desafio3(int numeroQuestao3) {
 		// valores que podem ser utilizados na pergunta
 		String[] valoresPergunta3 = { "1D7", "CC", "7A" };
-		
+
 		// valores que podem ser utilizados na resposta
 		String[] valoresResposta3 = { "727", "314", "172" };
-		
+
 		// passando o mesmo valor para pergunta e resposta para ter o valor correto
 		String valorPergunta3 = valoresPergunta3[numeroQuestao3];
 		String valorResposta3 = valoresResposta3[numeroQuestao3];
-		
+
 		// valores que podem aparecer como opcao de alternativas
 		String[][] alternativas3 = new String[][] { { "701", "727", "729", "731", "735" },
-		{ "312", "313", "314", "318", "322" }, { "172", "174", "176", "178", "180" } };
-		
-		
-		String pergunta3 = "\nDado um valor X em hexadecimal, converta o número para octal: \n";
-		formularPergunta(alternativas3, numeroQuestao3, valorPergunta3, valorResposta3, pergunta3, "cadeado");
+				{ "312", "313", "314", "318", "322" }, { "172", "174", "176", "178", "180" } };
+
+		String pergunta3 = "\nDado um valor " + valorPergunta3 + " em hexadecimal, converta o número para octal: \n";
+		formularPergunta(alternativas3, numeroQuestao3, valorResposta3, pergunta3, "tiro");
 	}
 
 	static void desafio4(int numeroQuestao4) {
@@ -286,55 +286,56 @@ public class JogoRPG {
 
 		// valores que podem aparecer como opcao de alternativas
 		String[][] alternativas4 = new String[][] { { "CEB", "CEA", "CED", "CEB", "CEF" },
-							{ "E48", "E49", "E4A", "EAB", "E4C" }, { "BFB", "BFC", "BFD", "BFE", "BFF" }};
+				{ "E48", "E49", "E4A", "EAB", "E4C" }, { "BFB", "BFC", "BFD", "BFE", "BFF" } };
 
-		String pergunta4 = "\nDado valor em binário, qual valor em hexa: \n";
+		String pergunta4 = "\nDado valor " + valorPergunta4 + " em binário, qual valor em hexa: \n";
 
-		formularPergunta(alternativas4, numeroQuestao4, valorPergunta4, valorResposta4, pergunta4, "cadeado");
+		formularPergunta(alternativas4, numeroQuestao4, valorResposta4, pergunta4, "tiro");
 
 	}
 
 	static void desafio5(int numeroQuestao5) {
-	        // valores que podem ser utilizados na pergunta
-	        String[] valoresPergunta5 = { "40% 720", "50% 600", "20% 770" };
+		// valores que podem ser utilizados na pergunta
+		String[] valoresPergunta1 = { "40% ", "50% ", "20% " };
+		String[] valoresPergunta2 = { "720", "600", "770" };
 
-	        // valores que podem ser utilizados na resposta
-	        String[] valoresResposta5 = { "300", "240", "350" };
+		// valores que podem ser utilizados na resposta
+		String[] valoresResposta5 = { "300", "240", "350" };
 
-	        // passando o mesmo valor para pergunta e resposta para ter o valor correto
-	        String valorPergunta5 = valoresPergunta5[numeroQuestao5];
-	        String valorResposta5 = valoresResposta5[numeroQuestao5];
+		// passando o mesmo valor para pergunta e resposta para ter o valor correto
+		String valorPergunta1 = valoresPergunta1[numeroQuestao5];
+		String valorPergunta2 = valoresPergunta2[numeroQuestao5];
+		String valorResposta5 = valoresResposta5[numeroQuestao5];
 
-	        // valores que podem aparecer como opcao de alternativas
-	        String[][] alternativas5 = new String[][] { {  "298", "299", "300", "301", "302" },
-	                { "238", "239", "240", "241", "242" }, { "348", "349", "350", "351", "352" }};
-	          
+		// valores que podem aparecer como opcao de alternativas
+		String[][] alternativas5 = new String[][] { { "298", "299", "300", "301", "302" },
+				{ "238", "239", "240", "241", "242" }, { "348", "349", "350", "351", "352" } };
 
-	        String pergunta5 = "\n Num exercício de tiro ao alvo, o número de acertos de uma pessoa A foi 40% maior do que B. Se A e B acertaram juntas 720 tiros, então o "
-	        		+ "número de acertos de B foi: \n";
+		String pergunta5 = "\n Num exercício de tiro ao alvo, o número de acertos de uma pessoa A foi " + valorPergunta1
+				+ " maior do que B. Se A e B acertaram juntas" + valorPergunta2 + "tiros, então o "
+				+ "número de acertos de B foi: \n";
 
-	        formularPergunta(alternativas5, numeroQuestao5, valorPergunta5, valorResposta5, pergunta5, "cadeado");
-	        
-		}
+		formularPergunta(alternativas5, numeroQuestao5, valorResposta5, pergunta5, "tiro");
 
-	
-		static void desafio6(int numeroQuestao6) {
-	        // valores que podem ser utilizados na pergunta
-	        String[] valoresPergunta6 = { "A=√(√6-2). √(2+√6)" };
+	}
 
-	        // valores que podem ser utilizados na resposta
-	        String[] valoresResposta6 = { "02" };
+	static void desafio6(int numeroQuestao6) {
+		// valores que podem ser utilizados na pergunta
+		String[] valoresPergunta6 = { "6" };
 
-	        // passando o mesmo valor para pergunta e resposta para ter o valor correto
-	        String valorPergunta6 = valoresPergunta6[numeroQuestao6];
-	        String valorResposta6 = valoresResposta6[numeroQuestao6];
+		// valores que podem ser utilizados na resposta
+		String[] valoresResposta6 = { "02" };
 
-	        // valores que podem aparecer como opcao de alternativas
-	        String[][] alternativas6 = new String[][] {{  "01", "02", "36", "12" }};
+		// passando o mesmo valor para pergunta e resposta para ter o valor correto
+		String valorPergunta6 = valoresPergunta6[numeroQuestao6];
+		String valorResposta6 = valoresResposta6[numeroQuestao6];
 
-	        String pergunta6 = "\n Se A=√(√6-2). √(2+√6), então o valor de A é: ";
+		// valores que podem aparecer como opcao de alternativas
+		String[][] alternativas6 = new String[][] { { "01", "02", "36", "12", "06" } };
 
-	        formularPergunta(alternativas6, numeroQuestao6, valorPergunta6, valorResposta6, pergunta6, "cadeado");
+		String pergunta6 = "\n Se A=√(√6-2). √(2+√6), então o valor de A é: ";
+
+		formularPergunta(alternativas6, numeroQuestao6, valorResposta6, pergunta6, "tiro");
 
 	}
 
@@ -379,7 +380,9 @@ public class JogoRPG {
 	}
 
 	static void historiaParte1() {
+		// gerar numero aleatorio para a criação da pergunta
 		int numeroSorteado = gerarNumero(4);
+
 		System.out.println("\n\n");
 		System.out.println("    ___            __                         __     \r\n"
 				+ "   /   |     _____/ /_  ___  ____ _____ _____/ /___ _\r\n"
@@ -410,6 +413,7 @@ public class JogoRPG {
 				+ "\r\n" + "-06: Entendido Capitão!\r\n");
 
 		desafio1(numeroSorteado);
+		// definir a variavel como false, para não pular a proxima pergunta
 		correto = false;
 
 		System.out.println("\n-Capitão: Boa 06!!! Agora escolhe logo um rifle pois não temos muito tempo!");
