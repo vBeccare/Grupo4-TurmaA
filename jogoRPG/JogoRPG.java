@@ -277,9 +277,30 @@ public class JogoRPG {
 
 	}
 
-	static void desafio5(int numeroQuestao) {
+	static void desafio5(int numeroQuestao5) {
+	        // valores que podem ser utilizados na pergunta
+	        String[] valoresPergunta5 = { "40% 720", "50% 600", "20% 770" };
 
-	}
+	        // valores que podem ser utilizados na resposta
+	        String[] valoresResposta5 = { "300", "240", "350" };
+
+	        // passando o mesmo valor para pergunta e resposta para ter o valor correto
+	        String valorPergunta5 = valoresPergunta5[numeroQuestao5];
+	        String valorResposta5 = valoresResposta5[numeroQuestao5];
+
+	        // valores que podem aparecer como opcao de alternativas
+	        String[][] alternativas5 = new String[][] { {  "298", "299", "300", "301", "302" },
+	                { "238", "239", "240", "241", "242" }, { "348", "349", "350", "351", "352" }};
+	          
+
+	        String pergunta5 = "\n Num exercício de tiro ao alvo, o número de acertos de uma pessoa A foi 40% maior do que B. Se A e B acertaram juntas 720 tiros, então o "
+	        		+ "número de acertos de B foi: \n";
+
+	        formularPergunta(alternativas5, numeroQuestao5, valorPergunta5, valorResposta5, pergunta5, "cadeado");
+	        
+		}
+
+	
 
 	static void desafio6(int numeroQuestao) {
 
