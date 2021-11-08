@@ -253,8 +253,24 @@ public class JogoRPG {
 
 	}
 
-	static void desafio3(int numeroQuestao) {
-
+	static void desafio3(int numeroQuestao3) {
+		// valores que podem ser utilizados na pergunta
+		String[] valoresPergunta3 = { "1D7", "CC", "7A" };
+		
+		// valores que podem ser utilizados na resposta
+		String[] valoresResposta3 = { "727", "314", "172" };
+		
+		// passando o mesmo valor para pergunta e resposta para ter o valor correto
+		String valorPergunta3 = valoresPergunta3[numeroQuestao3];
+		String valorResposta3 = valoresResposta3[numeroQuestao3];
+		
+		// valores que podem aparecer como opcao de alternativas
+		String[][] alternativas3 = new String[][] { { "701", "727", "729", "731", "735" },
+		{ "312", "313", "314", "318", "322" }, { "172", "174", "176", "178", "180" } };
+		
+		
+		String pergunta3 = "\nDado um valor X em hexadecimal, converta o número para octal: \n";
+		formularPergunta3(alternativas3, numeroQuestao3, valorPergunta3, valorResposta3, pergunta3, "cadeado");
 	}
 
 	static void desafio4(int numeroQuestao) {
