@@ -532,6 +532,18 @@ Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transf
 		historiaParte6();
 	}
 
+	static void voltarMenu() {
+	    int value;
+		value = entradaDadosInt("\n(1) Voltar");
+
+	    if (value != 1) {
+	        System.out.println("\nOpção inválida!");
+	    } else {
+	        menu();
+	    }
+	}
+	    
+	    
 	// metodo para mostrar como será a história do jogo
 	static void historia() {
 		int value = 0;
@@ -563,13 +575,7 @@ Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transf
 					+ "\r\n" + "O inevitável aconteceu... GUERRA!!!\r\n" + "\r\n"
 					+ "Diversos países do mundo todo em uma ofensiva direta para três corações está prestes a acontecer!! Precisamos nos preparar!!");
 
-			value = entradaDadosInt("\n(1) Voltar");
-
-			if (value != 1) {
-				System.out.println("\nOpção inválida!");
-			} else {
-				menu();
-			}
+			voltarMenu();
 		}
 	}
 
@@ -584,14 +590,8 @@ Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transf
 					"\nUma arma mais fraca lhe permite mais estabilidade e torna mais difícil para o inimigo te detectar, isso lhe permite mais tentativas... ");
 
 			imprimirArsenal();
-
-			value = entradaDadosInt("\n(1) Voltar");
-
-			if (value != 1) {
-				System.out.println("\nOpção inválida!");
-			} else {
-				menu();
-			}
+			voltarMenu();
+			
 		}
 
 	}
@@ -603,13 +603,8 @@ Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transf
 			System.out.println("Turma 1ºA TADS - Noturno, 2º Semestre, 2021");
 			System.out.println("Desenvolvido por Bruna Vieira, Reidiney Silva, William Berg e Victor Beccare ");
 
-			value = entradaDadosInt("\n(1) Voltar");
-
-			if (value != 1) {
-				System.out.println("\nOpção inválida!");
-			} else {
-				menu();
-			}
+			voltarMenu();
+			
 		}
 	}
 
