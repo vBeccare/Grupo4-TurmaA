@@ -250,9 +250,27 @@ public class JogoRPG {
 
 	}
 
-	static void desafio2(int numeroQuestao) {
+	static void desafio2(int numeroQuestao2) {
+		// valores que podem ser utilizados na pergunta
+				String[] valoresPergunta2 = { "9", "8", "7" };
 
-	}
+				// valores que podem ser utilizados na resposta
+				String[] valoresResposta2 = { "729", "512", "343" };
+
+				// passando o mesmo valor para pergunta e resposta para ter o valor correto
+				String valorPergunta2 = valoresPergunta2[numeroQuestao2];
+				String valorResposta2 = valoresResposta2[numeroQuestao2];
+
+				// valores que podem aparecer como opcao de alternativas
+				String[][] alternativas2 = new String[][] { { "727", "728", "729", "730", "731" },
+						{ "510", "511", "512", "513", "514" }, { "341", "342", "343", "344", "345" } };
+
+				String pergunta2 = "\n Você precisa escalar... Sabendo que em um exército possui  " + valorPergunta2 + " batalhões. \n"
+						+ "Cada batalhão possui " + valorPergunta2 + "soldados e cada soldado tem que fazer uma marcha de " + valorPergunta2 + "km. Quantos km são percorridos ao todo?: \n";
+				formularPergunta(alternativas2, numeroQuestao2, valorResposta2, pergunta2, "escalada");
+			}
+
+	
 
 	static void desafio3(int numeroQuestao3) {
 		// valores que podem ser utilizados na pergunta
