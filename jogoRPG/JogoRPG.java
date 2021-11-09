@@ -441,83 +441,115 @@ public class JogoRPG {
 	}
 
 	static void historiaParte2() {
+		
+
+		int numeroSorteado = gerarNumero(2);
+
+		
+		System.out.println("\nDiretamente do Arsenal, Capitão e 06 correram para o campo de batalha, havia diversos corpos no chão, e 06 começou a ficar assustado...");
+		System.out.println("\n -Capitão... a gente precisa mesmo de fazer isso? perguntou 06 com medo.");
+		System.out.println("\n - Capitão: Se você não quiser ser preso pelo resto da sua vida por deserção...");
+		System.out.println("\n- Ok... Responde 06 quase chorando");
+		
+		System.out.println ("\nAinda assustado, 06 continuou seguindo e pensando como que ele iria vencer os seus medos, afinal não tinha mais como voltar atrás... "
+				+ "ele gostava de ser um soldado, e ainda mais da classe Sniper, pois no quartel ele havia " 
+				+ "ganho medalhas de honra por ser o melhor atirador.");
+		
+		System.out.println("\nDepois de chegarem no local, capitão e 06 se depararam com um morro o qual deveriam escalar para se posicionarem e realizar os abates, porém seria complicado "
+				+ "subir, visto que o terreno não ajudava muito.");
+		
+		desafio2(numeroSorteado);
+				
 
 	}
 
 	static void historiaParte3() {
-		// teste verificar se essa é a parte 3 da historia
-		
-		/*System.out.println( " Depois da escalada, Capitão e 06 se posicionaram atrás de uma rocha que serviria de cobertura. E enquanto se prepararam, 06 viu algo que mudaria completamente o seu comportamento.
-		 
-	 	- Capitão: Precisamos encontrar esse Sniper o quanto antes! Prepare o seu fuzil enquanto eu o localizo com o binóculo.
+		int numeroSorteado = gerarNumero(2);
 
-		- 06: Certo! Ei espera... aquele ali não é o meu vizinho?
-
-		/*Naquele momento 06 viu o seu vizinho e amigo de quartel sendo morto pelo Sniper, como se não bastasse ter visto aquela cena, ele também conseguiu localizar o atirador. Enfurecido, ele tomou agiu imediatamente, se posicionou e se preparou para atirar.*/
 		
+		System.out.println ("\nDepois da escalada, Capitão e 06 se posicionaram atrás de uma rocha que serviria de cobertura. E enquanto se prepararam, 06 viu algo "
+				+ "que mudaria completamente o seu comportamento.");
+		System.out.println("\n- Capitão: Precisamos encontrar esse Sniper o quanto antes! Prepare o seu "
+				+ "fuzil enquanto eu o localizo com o binóculo.");
+		System.out.println("\n- 06: Certo! Ei espera... aquele ali não é o meu vizinho?");
+		System.out.println("\nNaquele momento 06 viu o seu vizinho e amigo de quartel sendo morto pelo Sniper, como se não bastasse ter visto aquela cena, ele também conseguiu localizar o atirador."
+				+ "Enfurecido, ele tomou agiu imediatamente, se posicionou e se preparou para atirar.");
+		
+		desafio3(numeroSorteado);
+				
 	}
 
 	static void historiaParte4() {
-		// teste verificar se essa é a parte 4 da historia
+		int numeroSorteado = gerarNumero(2);
+
 		
-		/* System.out.println( " Surpreso pelo tiro certeiro, Capitão chamou a atenção de 06 pela atitude inesperada, e o repreendeu.
-
-- “Seu imprudente! Já pensou se você erra e ele nos fuzila? O que seria da missão e do resto do batalhão? Seu maluco!!!” Exclamou o capitão com uma certa admiração pela boa pontaria.
-
-- 06: Ele matou o meu amigo! Você não faria o mesmo?
-
-- Capitão: Cara eu só não vou te reportar para o Major por você ter sido eficiente, mas saiba que aqui a gente não faz o que dá na telha! A gente segue ordens! Entendido?
-
-- “Sim senhor capitão!” Exclamou 06 prestando continência.
-
-Depois deste combate, os dois seguiram para a região de Mogi para deter o desembarque das tropas que aterrissariam em aviões, era preciso ser rápido pois a segunda parte da cura ainda corria risco.
-
-
-
-•	Eu não preciso dominar o mundo, só preciso ajudar o meu país
-
-
-06 e Capitão partiram em disparada, eles precisavam de chegar em Mogi o quanto antes, pois como o ataque da coalisão foi muito mal coordenado, o Major acreditava que era possível encurralar as tropas e expulsá-las para as praias de Paraty, ou até mesmo capturá-las. Mas independente do método, era de suma importância que os Franco-Atiradores inimigos fossem eliminados.
-
-Enquanto Capitão dirigia o caminhão militar com os demais soltados na caçamba, 06 estava no banco do carona pensando em como seria a batalha, ele parecia um pouco ansioso
-
-- Capitão: 06! O que você tanto pensa aí? Não acha que está um pouco quieto demais?
-
-- “Não Capitão, eu só estou me preparando para o combate” disse 06 com um pouco de medo.
-
-- Capitão: Cara, eu sei que você está com medo, mas pensa bem. Se a gente sair daqui a gente pode montar uma empresa, abrir um negócio, ficar ricos e dominar o mundo! São infinitas as possibilidades! 
-
-Mas isso só vai acontecer se a gente se sair bem e conseguir vencer essa batalha!!! Ânimo 06!
-
-- “Tudo bem Capitão!” disse 06 mais confiante.
-
-
-Ao chegar em Mogi a guerra já estava ocorrendo no aeroporto, porém dessa vez a coalisão estava totalmente perdida, pois já havia tropas advindas de Campinas e São Paulo combatendo no local.
-Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transformou em uma máquina! Uma besta enjaulada com ódio! Não deixando uma alma viva sequer no seu caminho!
-
-(Imagem do 06 putasso!!)
-
-- Capitão: 06! Inimigo às 2 horas!!
-
-- 06: Inimigo abatido!
-
-- Capitão: Boa 06! Agora tenha cuidado! Inimigo avistado às 12 horas!!
-
-- 06: Inimigo abatido!
-
-- Capitão: Também atirando com o meu fuzil fica fácil! Agora elimina aquele ali que está às 10 horas lá na guarita.
-
-*/
-
+		System.out.println ("\nSurpreso pelo tiro certeiro, Capitão chamou a atenção de 06 pela atitude inesperada, e o repreendeu.");
+		System.out.println ("\n- “Seu imprudente! Já pensou se você erra e ele nos fuzila? O que seria da missão e do resto do batalhão? "
+				+ "Seu maluco!!!” Exclamou o capitão com uma certa admiração pela boa pontaria.");
+		System.out.println ("\n- 06: Ele matou o meu amigo! Você não faria o mesmo?");
+		System.out.println ("\n- Capitão: Cara eu só não vou te reportar para o Major por você ter sido eficiente, mas saiba que aqui a "
+				+ "gente não faz o que dá na telha! A gente segue ordens! Entendido?");
+		System.out.println("\n- “Sim senhor capitão!” Exclamou 06 prestando continência.");
+		System.out.println("\nDepois deste combate, os dois seguiram para a região de Mogi para deter o desembarque das tropas que aterrissariam em aviões, era preciso "
+				+ "ser rápido pois a segunda parte da cura ainda corria risco.");
+		
+		System.out.println("\n•	Eu não preciso dominar o mundo, só preciso ajudar o meu país");
+		
+	    System.out.print("\n\n06 e Capitão partiram em disparada, eles precisavam de chegar em Mogi o quanto antes, pois como o ataque da coalisão foi muito mal "
+	    		+ "coordenado, o Major acreditava que era possível encurralar as tropas e expulsá-las para as praias de Paraty, ou até mesmo capturá-las. "
+	    		+ "Mas independente do método, era de suma importância que os Franco-Atiradores inimigos fossem eliminados.");
+	    System.out.println("\nEnquanto Capitão dirigia o caminhão militar com os demais soltados na caçamba, 06 estava no banco do carona pensando em como seria a "
+	    		+ "batalha, ele parecia um pouco ansioso.");
+	    System.out.println("\n- Capitão: 06! O que você tanto pensa aí? Não acha que está um pouco quieto demais?");
+	    System.out.println("\n- “Não Capitão, eu só estou me preparando para o combate” disse 06 com um pouco de medo.");
+	    System.out.println("\n- Capitão: Cara, eu sei que você está com medo, mas pensa bem. Se a gente sair daqui a gente pode montar uma empresa, abrir um negócio, ficar ricos e dominar o mundo! "
+	    		+ "\nSão infinitas as possibilidades! ");
+	    System.out.print("\n\nMas isso só vai acontecer se a gente se sair bem e conseguir vencer essa batalha!!! Ânimo 06!");
+	    System.out.print("\n- “Tudo bem Capitão!” disse 06 mais confiante.");
+	    System.out.print("\nAo chegar em Mogi a guerra já estava ocorrendo no aeroporto, porém dessa vez a coalisão estava totalmente perdida, pois já havia tropas advindas de Campinas e São Paulo "
+	    		+ "combatendo no local. Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transformou em uma máquina! Uma besta enjaulada com ódio! Não deixando "
+	    		+ "uma alma viva sequer no seu caminho!");
+	    
+	    //Inserir imagem 06 puto
+	    
+	    System.out.println("\n- Capitão: 06! Inimigo às 2 horas!!");
+	    System.out.print("\n- 06: Inimigo abatido!");
+	    System.out.println("\n- Capitão: Boa 06! Agora tenha cuidado! Inimigo avistado às 12 horas!!");
+	    System.out.println("\n- 06: Inimigo abatido!");
+	    
+	    //imagem 06 matando mais que a peste negra
+	    
+	    System.out.println("\n- Capitão: Também atirando com o meu fuzil fica fácil! Agora elimina aquele ali que "
+	    		+ "está às 10 horas lá na guarita.");
+	    		
+     desafio4(numeroSorteado);
 	}
 
 	static void historiaParte5() {
+		int numeroSorteado = gerarNumero(4);
+		
+		System.out.println("\n- Capitão: 06 você está fazendo o meu dia muito mais feliz! ");
+		System.out.println("\n- Parece que o amiguinho dele tomou o lugar no posto dele, acaba com ele!");
+			
+		
+		desafio5(numeroSorteado);
 
 	}
 
 	static void historiaParte6() {
+		int numeroSorteado = gerarNumero(1);
+		
+	
+		
+		
+		
+		desafio6(numeroSorteado);
+
 
 	}
+
+	
+	
 
 	// ------- aqui termina os metodos usados no jogar -------
 
