@@ -64,7 +64,15 @@ public class JogoRPG {
 
 	// metodo para trabalhar com as tentativas da questão de escalada
 	static void statusEscalada() {
-
+		tentativasEscalada--;
+		if (tentativasEscalada == 2) {
+			System.out.println("\nCuidado! Veja bem se onde irá se apoiar está seguro!");
+		} else if (tentativasEscalada == 1) {
+			System.out.println("\nSoldado, desse jeito você vai acabar caindo!!");
+		} else if (tentativasEscalada == 0) {
+			System.out.println("\nVocê pegou errado numa pedra e acabou caindo!");
+			System.exit(0);
+		}
 	}
 
 	// funcao para definir quantas vidas o jogador terá nas batalhas
@@ -80,18 +88,18 @@ public class JogoRPG {
 			case 1:
 			case 3:
 				vida = 1;
-				System.out.println("\nQue coragem! Lembre que você não pode falhar nenhuma vez! ");
+				System.out.println("\nQue coragem! Lembre que você não pode falhar nenhuma vez!\n\n ");
 				break;
 			case 2:
 				vida = 2;
-				System.out.println("\nBoa escolha! Tem a chance de errar 2 vezes! ");
+				System.out.println("\nBoa escolha! Tem a chance de errar 2 vezes!\n\n ");
 				break;
 			case 4:
 				vida = 3;
-				System.out.println("\nJogando de forma tranquila, as 3 vidas estão em jogo!");
+				System.out.println("\nJogando de forma tranquila, as 3 vidas estão em jogo!\n\n");
 				break;
 			default:
-				System.out.println("Poxa, soldado, aonde você está vendo essa opção? Escolha novamente!");
+				System.out.println("\nPoxa, soldado, aonde você está vendo essa opção? Escolha novamente!");
 			}
 		} while (escolhaArma != 1 && escolhaArma != 2 && escolhaArma != 3 && escolhaArma != 4);
 
@@ -252,25 +260,25 @@ public class JogoRPG {
 
 	static void desafio2(int numeroQuestao2) {
 		// valores que podem ser utilizados na pergunta
-				String[] valoresPergunta2 = { "9", "8", "7" };
+		String[] valoresPergunta2 = { "9", "8", "7" };
 
-				// valores que podem ser utilizados na resposta
-				String[] valoresResposta2 = { "729", "512", "343" };
+		// valores que podem ser utilizados na resposta
+		String[] valoresResposta2 = { "729", "512", "343" };
 
-				// passando o mesmo valor para pergunta e resposta para ter o valor correto
-				String valorPergunta2 = valoresPergunta2[numeroQuestao2];
-				String valorResposta2 = valoresResposta2[numeroQuestao2];
+		// passando o mesmo valor para pergunta e resposta para ter o valor correto
+		String valorPergunta2 = valoresPergunta2[numeroQuestao2];
+		String valorResposta2 = valoresResposta2[numeroQuestao2];
 
-				// valores que podem aparecer como opcao de alternativas
-				String[][] alternativas2 = new String[][] { { "727", "728", "729", "730", "731" },
-						{ "510", "511", "512", "513", "514" }, { "341", "342", "343", "344", "345" } };
+		// valores que podem aparecer como opcao de alternativas
+		String[][] alternativas2 = new String[][] { { "727", "728", "729", "730", "731" },
+				{ "510", "511", "512", "513", "514" }, { "341", "342", "343", "344", "345" } };
 
-				String pergunta2 = "\n Você precisa escalar... Sabendo que em um exército possui  " + valorPergunta2 + " batalhões. \n"
-						+ "Cada batalhão possui " + valorPergunta2 + "soldados e cada soldado tem que fazer uma marcha de " + valorPergunta2 + "km. Quantos km são percorridos ao todo?: \n";
-				formularPergunta(alternativas2, numeroQuestao2, valorResposta2, pergunta2, "escalada");
-			}
-
-	
+		String pergunta2 = "\nVocê precisa escalar... Sabendo que em um exército possui " + valorPergunta2
+				+ " batalhões. \n" + "Cada batalhão possui " + valorPergunta2
+				+ " soldados e cada soldado tem que fazer uma marcha de " + valorPergunta2
+				+ "km. Quantos km são percorridos ao todo?: \n";
+		formularPergunta(alternativas2, numeroQuestao2, valorResposta2, pergunta2, "escalada");
+	}
 
 	static void desafio3(int numeroQuestao3) {
 		// valores que podem ser utilizados na pergunta
@@ -330,7 +338,7 @@ public class JogoRPG {
 				{ "238", "239", "240", "241", "242" }, { "348", "349", "350", "351", "352" } };
 
 		String pergunta5 = "\n Num exercício de tiro ao alvo, o número de acertos de uma pessoa A foi " + valorPergunta1
-				+ " maior do que B. Se A e B acertaram juntas" + valorPergunta2 + "tiros, então o "
+				+ " maior do que B. Se A e B acertaram juntas " + valorPergunta2 + " tiros, então o "
 				+ "número de acertos de B foi: \n";
 
 		formularPergunta(alternativas5, numeroQuestao5, valorResposta5, pergunta5, "tiro");
@@ -351,7 +359,7 @@ public class JogoRPG {
 		// valores que podem aparecer como opcao de alternativas
 		String[][] alternativas6 = new String[][] { { "01", "02", "36", "12", "06" } };
 
-		String pergunta6 = "\n Se A=√(√6-2). √(2+√6), então o valor de A é: ";
+		String pergunta6 = "\nSe A=√(√6-2). √(2+√6), então o valor de A é: ";
 
 		formularPergunta(alternativas6, numeroQuestao6, valorResposta6, pergunta6, "tiro");
 
@@ -373,7 +381,7 @@ public class JogoRPG {
 				"Naquela manhã, o Major se encontrava no quartel extremamente enfurecido! E pronto para dar as ordens para o seu fiel subordinado, o Capitão:");
 
 		System.out.println("\n-Major: Capitão! venha até aqui."
-				+ "\n Precisamos alocar o quanto antes o novo soldado da classe Sniper no batalhão.");
+				+ "\nPrecisamos alocar o quanto antes o novo soldado da classe Sniper no batalhão.");
 		System.out.println("-Capitão: Certo! Irei fazer isso! Inclusive, qual o seu nome, filho?");
 
 		System.out.println("-Personagem: " + nomeJogador);
@@ -421,10 +429,10 @@ public class JogoRPG {
 				+ "\r\n"
 				+ "Pouco depois, Capitão e 06 foram ordenados pelo Major e se deslocarem imediatamente para o campo de batalha, "
 				+ "\npois foi informado que um Sniper já havia abatido mais de 20 soldados.\r\n" + "\r\n"
-				+ "-Major: Capitão, eu te ordeno a eliminar este cretino! O infeliz já matou mais que a peste negra! Estou perdendo muitos homens!!!\r\n"
+				+ "- Major: Capitão, eu te ordeno a eliminar este cretino! O infeliz já matou mais que a peste negra! Estou perdendo muitos homens!!!\r\n"
 				+ "\r\n" + "Certo, estamos a caminho! “Disse o Capitão”\r\n" + "\r\n"
-				+ "-06: Capitão! O que faremos?\r\n" + "\r\n"
-				+ "-Capitão: Agora iremos para o arsenal, você precisará de escolher um rifle para o combate.\r\n"
+				+ "- 06: Capitão! O que faremos?\r\n" + "\r\n"
+				+ "- Capitão: Agora iremos para o arsenal, você precisará de escolher um rifle para o combate.\r\n"
 				+ "\r\n"
 				+ "-E antes que eu me esqueça, implementamos recentemente novas senhas nos cofres, você precisará de responder corretamente a pergunta feita para abrir o seu cofre."
 				+ "\n Tome muito cuidado! Pois se você errar 3 vezes seu cofre ficará trancado para sempre!\r\n"
@@ -433,123 +441,137 @@ public class JogoRPG {
 		desafio1(numeroSorteado);
 		// definir a variavel como false, para não pular a proxima pergunta
 		correto = false;
-
-		System.out.println("\n-Capitão: Boa 06!!! Agora escolhe logo um rifle pois não temos muito tempo!");
+		System.out.println("\n- Capitão: Boa 06!!! Agora escolhe logo um rifle pois não temos muito tempo!");
 
 		escolhaRifle();
 
 	}
 
 	static void historiaParte2() {
-		
 
 		int numeroSorteado = gerarNumero(2);
 
-		
-		System.out.println("\nDiretamente do Arsenal, Capitão e 06 correram para o campo de batalha, havia diversos corpos no chão, e 06 começou a ficar assustado...");
-		System.out.println("\n -Capitão... a gente precisa mesmo de fazer isso? perguntou 06 com medo.");
-		System.out.println("\n - Capitão: Se você não quiser ser preso pelo resto da sua vida por deserção...");
+		System.out.println(
+				"\nDiretamente do Arsenal, Capitão e 06 correram para o campo de batalha, havia diversos corpos no chão, e 06 começou a ficar assustado...");
+		System.out.println("\n- Capitão... a gente precisa mesmo de fazer isso? perguntou 06 com medo.");
+		System.out.println("\n- Capitão: Se você não quiser ser preso pelo resto da sua vida por deserção...");
 		System.out.println("\n- Ok... Responde 06 quase chorando");
-		
-		System.out.println ("\nAinda assustado, 06 continuou seguindo e pensando como que ele iria vencer os seus medos, afinal não tinha mais como voltar atrás... "
-				+ "ele gostava de ser um soldado, e ainda mais da classe Sniper, pois no quartel ele havia " 
-				+ "ganho medalhas de honra por ser o melhor atirador.");
-		
-		System.out.println("\nDepois de chegarem no local, capitão e 06 se depararam com um morro o qual deveriam escalar para se posicionarem e realizar os abates, porém seria complicado "
-				+ "subir, visto que o terreno não ajudava muito.");
-		
-		desafio2(numeroSorteado);
-				
 
+		System.out.println(
+				"\nAinda assustado, 06 continuou seguindo e pensando como que ele iria vencer os seus medos, afinal não tinha mais como voltar atrás... "
+						+ "\nele gostava de ser um soldado, e ainda mais da classe Sniper, pois no quartel ele havia "
+						+ "\nganho medalhas de honra por ser o melhor atirador.");
+
+		System.out.println(
+				"\nDepois de chegarem no local, capitão e 06 se depararam com um morro o qual deveriam escalar para se posicionarem e realizar os abates, porém seria complicado "
+						+ "\nsubir, visto que o terreno não ajudava muito.\n");
+
+		desafio2(numeroSorteado);
+		correto = false;
 	}
 
 	static void historiaParte3() {
 		int numeroSorteado = gerarNumero(2);
 
-		
-		System.out.println ("\nDepois da escalada, Capitão e 06 se posicionaram atrás de uma rocha que serviria de cobertura. E enquanto se prepararam, 06 viu algo "
-				+ "que mudaria completamente o seu comportamento.");
+		System.out.println(
+				"\nDepois da escalada, Capitão e 06 se posicionaram atrás de uma rocha que serviria de cobertura. E enquanto se prepararam, 06 viu algo "
+						+ "\nque mudaria completamente o seu comportamento.");
 		System.out.println("\n- Capitão: Precisamos encontrar esse Sniper o quanto antes! Prepare o seu "
 				+ "fuzil enquanto eu o localizo com o binóculo.");
 		System.out.println("\n- 06: Certo! Ei espera... aquele ali não é o meu vizinho?");
-		System.out.println("\nNaquele momento 06 viu o seu vizinho e amigo de quartel sendo morto pelo Sniper, como se não bastasse ter visto aquela cena, ele também conseguiu localizar o atirador."
-				+ "Enfurecido, ele tomou agiu imediatamente, se posicionou e se preparou para atirar.");
-		
+		System.out.println(
+				"\nNaquele momento 06 viu o seu vizinho e amigo de quartel sendo morto pelo Sniper, como se não bastasse ter visto aquela cena, ele também conseguiu localizar o atirador."
+						+ "\nEnfurecido, ele tomou agiu imediatamente, se posicionou e se preparou para atirar.\n");
+
 		desafio3(numeroSorteado);
-				
+		correto = false;
 	}
 
 	static void historiaParte4() {
 		int numeroSorteado = gerarNumero(2);
 
-		
-		System.out.println ("\nSurpreso pelo tiro certeiro, Capitão chamou a atenção de 06 pela atitude inesperada, e o repreendeu.");
-		System.out.println ("\n- “Seu imprudente! Já pensou se você erra e ele nos fuzila? O que seria da missão e do resto do batalhão? "
-				+ "Seu maluco!!!” Exclamou o capitão com uma certa admiração pela boa pontaria.");
-		System.out.println ("\n- 06: Ele matou o meu amigo! Você não faria o mesmo?");
-		System.out.println ("\n- Capitão: Cara eu só não vou te reportar para o Major por você ter sido eficiente, mas saiba que aqui a "
-				+ "gente não faz o que dá na telha! A gente segue ordens! Entendido?");
+		System.out.println(
+				"\nSurpreso pelo tiro certeiro, Capitão chamou a atenção de 06 pela atitude inesperada, e o repreendeu.");
+		System.out.println(
+				"\n- “Seu imprudente! Já pensou se você erra e ele nos fuzila? O que seria da missão e do resto do batalhão? "
+						+ "Seu maluco!!!” Exclamou o capitão com uma certa admiração pela boa pontaria.");
+		System.out.println("\n- 06: Ele matou o meu amigo! Você não faria o mesmo?");
+		System.out.println(
+				"\n- Capitão: Cara eu só não vou te reportar para o Major por você ter sido eficiente, mas saiba que aqui a "
+						+ "gente não faz o que dá na telha! A gente segue ordens! Entendido?");
 		System.out.println("\n- “Sim senhor capitão!” Exclamou 06 prestando continência.");
-		System.out.println("\nDepois deste combate, os dois seguiram para a região de Mogi para deter o desembarque das tropas que aterrissariam em aviões, era preciso "
-				+ "ser rápido pois a segunda parte da cura ainda corria risco.");
-		
-		System.out.println("\n•	Eu não preciso dominar o mundo, só preciso ajudar o meu país");
-		
-	    System.out.print("\n\n06 e Capitão partiram em disparada, eles precisavam de chegar em Mogi o quanto antes, pois como o ataque da coalisão foi muito mal "
-	    		+ "coordenado, o Major acreditava que era possível encurralar as tropas e expulsá-las para as praias de Paraty, ou até mesmo capturá-las. "
-	    		+ "Mas independente do método, era de suma importância que os Franco-Atiradores inimigos fossem eliminados.");
-	    System.out.println("\nEnquanto Capitão dirigia o caminhão militar com os demais soltados na caçamba, 06 estava no banco do carona pensando em como seria a "
-	    		+ "batalha, ele parecia um pouco ansioso.");
-	    System.out.println("\n- Capitão: 06! O que você tanto pensa aí? Não acha que está um pouco quieto demais?");
-	    System.out.println("\n- “Não Capitão, eu só estou me preparando para o combate” disse 06 com um pouco de medo.");
-	    System.out.println("\n- Capitão: Cara, eu sei que você está com medo, mas pensa bem. Se a gente sair daqui a gente pode montar uma empresa, abrir um negócio, ficar ricos e dominar o mundo! "
-	    		+ "\nSão infinitas as possibilidades! ");
-	    System.out.print("\n\nMas isso só vai acontecer se a gente se sair bem e conseguir vencer essa batalha!!! Ânimo 06!");
-	    System.out.print("\n- “Tudo bem Capitão!” disse 06 mais confiante.");
-	    System.out.print("\nAo chegar em Mogi a guerra já estava ocorrendo no aeroporto, porém dessa vez a coalisão estava totalmente perdida, pois já havia tropas advindas de Campinas e São Paulo "
-	    		+ "combatendo no local. Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transformou em uma máquina! Uma besta enjaulada com ódio! Não deixando "
-	    		+ "uma alma viva sequer no seu caminho!");
-	    
-	    //Inserir imagem 06 puto
-	    
-	    System.out.println("\n- Capitão: 06! Inimigo às 2 horas!!");
-	    System.out.print("\n- 06: Inimigo abatido!");
-	    System.out.println("\n- Capitão: Boa 06! Agora tenha cuidado! Inimigo avistado às 12 horas!!");
-	    System.out.println("\n- 06: Inimigo abatido!");
-	    
-	    //imagem 06 matando mais que a peste negra
-	    
-	    System.out.println("\n- Capitão: Também atirando com o meu fuzil fica fácil! Agora elimina aquele ali que "
-	    		+ "está às 10 horas lá na guarita.");
-	    		
-     desafio4(numeroSorteado);
+		System.out.println(
+				"\nDepois deste combate, os dois seguiram para a região de Mogi para deter o desembarque das tropas que aterrissariam em aviões, era preciso "
+						+ "ser rápido pois a segunda parte da cura ainda corria risco.");
+		System.out.println("\n\n");
+		System.out.println(
+				"\n   / ____/_  __   ____  ____ _____     ____  ________  _____(_)________     ____/ /___  ____ ___  (_)___  ____ ______   ____     ____ ___  __  ______  ____/ /___      \r\n"
+						+ "  / __/ / / / /  / __ \\/ __ `/ __ \\   / __ \\/ ___/ _ \\/ ___/ / ___/ __ \\   / __  / __ \\/ __ `__ \\/ / __ \\/ __ `/ ___/  / __ \\   / __ `__ \\/ / / / __ \\/ __  / __ \\     \r\n"
+						+ " / /___/ /_/ /  / / / / /_/ / /_/ /  / /_/ / /  /  __/ /__/ (__  ) /_/ /  / /_/ / /_/ / / / / / / / / / / /_/ / /     / /_/ /  / / / / / / /_/ / / / / /_/ / /_/ /   _ \r\n"
+						+ "/_____/\\__,_/  /_/ /_/\\__,_/\\____/  / .___/_/   \\___/\\___/_/____/\\____/   \\__,_/\\____/_/ /_/ /_/_/_/ /_/\\__,_/_/      \\____/  /_/ /_/ /_/\\__,_/_/ /_/\\__,_/\\____/   ( )\r\n"
+						+ "                                   /_/                                                                                                                              |/ \r\n"
+						+ "                                       _                       _           __                                                           _     \r\n"
+						+ "   _________     ____  ________  _____(_)________     ____ _  (_)_  ______/ /___ ______   ____     ____ ___  ___  __  __   ____  ____ _/_/____\r\n"
+						+ "  / ___/ __ \\   / __ \\/ ___/ _ \\/ ___/ / ___/ __ \\   / __ `/ / / / / / __  / __ `/ ___/  / __ \\   / __ `__ \\/ _ \\/ / / /  / __ \\/ __ `/ / ___/\r\n"
+						+ " (__  ) /_/ /  / /_/ / /  /  __/ /__/ (__  ) /_/ /  / /_/ / / / /_/ / /_/ / /_/ / /     / /_/ /  / / / / / /  __/ /_/ /  / /_/ / /_/ / (__  ) \r\n"
+						+ "/____/\\____/  / .___/_/   \\___/\\___/_/____/\\____/   \\__,_/_/ /\\__,_/\\__,_/\\__,_/_/      \\____/  /_/ /_/ /_/\\___/\\__,_/  / .___/\\__,_/_/____/  \r\n"
+						+ "             /_/                                        /___/                                                          /_/                    ");
+		System.out.println("\n\n");
+		System.out.print(
+				"\n\n06 e Capitão partiram em disparada, eles precisavam de chegar em Mogi o quanto antes, pois como o ataque da coalisão foi muito mal "
+						+ "coordenado, o Major acreditava que era possível encurralar as tropas e expulsá-las para as praias de Paraty, ou até mesmo capturá-las. "
+						+ "Mas independente do método, era de suma importância que os Franco-Atiradores inimigos fossem eliminados.");
+		System.out.println(
+				"\nEnquanto Capitão dirigia o caminhão militar com os demais soltados na caçamba, 06 estava no banco do carona pensando em como seria a "
+						+ "batalha, ele parecia um pouco ansioso.");
+		System.out.println("\n- Capitão: 06! O que você tanto pensa aí? Não acha que está um pouco quieto demais?");
+		System.out
+				.println("\n- “Não Capitão, eu só estou me preparando para o combate” disse 06 com um pouco de medo.");
+		System.out.println(
+				"\n- Capitão: Cara, eu sei que você está com medo, mas pensa bem. Se a gente sair daqui a gente pode montar uma empresa, abrir um negócio, ficar ricos e dominar o mundo! "
+						+ "\nSão infinitas as possibilidades! ");
+		System.out.print(
+				"\n\nMas isso só vai acontecer se a gente se sair bem e conseguir vencer essa batalha!!! Ânimo 06!");
+		System.out.print("\n- “Tudo bem Capitão!” disse 06 mais confiante.");
+		System.out.print(
+				"\nAo chegar em Mogi a guerra já estava ocorrendo no aeroporto, porém dessa vez a coalisão estava totalmente perdida, pois já havia tropas advindas de Campinas e São Paulo "
+						+ "combatendo no local. Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transformou em uma máquina! Uma besta enjaulada com ódio! Não deixando "
+						+ "uma alma viva sequer no seu caminho!");
+
+		// Inserir imagem 06 puto
+
+		System.out.println("\n- Capitão: 06! Inimigo às 2 horas!!");
+		System.out.print("\n- 06: Inimigo abatido!");
+		System.out.println("\n- Capitão: Boa 06! Agora tenha cuidado! Inimigo avistado às 12 horas!!");
+		System.out.println("\n- 06: Inimigo abatido!");
+
+		// imagem 06 matando mais que a peste negra
+
+		System.out.println("\n- Capitão: Também atirando com o meu fuzil fica fácil! Agora elimina aquele ali que "
+				+ "\nestá às 10 horas lá na guarita.\n");
+
+		desafio4(numeroSorteado);
+		correto = false;
 	}
 
 	static void historiaParte5() {
 		int numeroSorteado = gerarNumero(4);
-		
+
 		System.out.println("\n- Capitão: 06 você está fazendo o meu dia muito mais feliz! ");
 		System.out.println("\n- Parece que o amiguinho dele tomou o lugar no posto dele, acaba com ele!");
-			
-		
+
 		desafio5(numeroSorteado);
+		correto = false;
 
 	}
 
 	static void historiaParte6() {
 		int numeroSorteado = gerarNumero(1);
-		
-	
-		
-		
-		
-		desafio6(numeroSorteado);
 
+		desafio6(numeroSorteado);
+		correto = false;
 
 	}
-
-	
-	
 
 	// ------- aqui termina os metodos usados no jogar -------
 
@@ -565,17 +587,16 @@ public class JogoRPG {
 	}
 
 	static void voltarMenu() {
-	    int value;
+		int value;
 		value = entradaDadosInt("\n(1) Voltar");
 
-	    if (value != 1) {
-	        System.out.println("\nOpção inválida!");
-	    } else {
-	        menu();
-	    }
+		if (value != 1) {
+			System.out.println("\nSoldado, eu não compreendi...!");
+		} else {
+			menu();
+		}
 	}
-	    
-	    
+
 	// metodo para mostrar como será a história do jogo
 	static void historia() {
 		int value = 0;
@@ -623,7 +644,7 @@ public class JogoRPG {
 
 			imprimirArsenal();
 			voltarMenu();
-			
+
 		}
 
 	}
@@ -636,7 +657,7 @@ public class JogoRPG {
 			System.out.println("Desenvolvido por Bruna Vieira, Reidiney Silva, William Berg e Victor Beccare ");
 
 			voltarMenu();
-			
+
 		}
 	}
 
