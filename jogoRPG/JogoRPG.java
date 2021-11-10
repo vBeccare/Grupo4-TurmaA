@@ -757,6 +757,24 @@ public class JogoRPG {
 	}
 
 	public static void main(String[] args) {
+		//Para rodar os testes
+		//testeGerarNumero();
+		
 		menu();
+	}
+
+	// TESTES
+
+	// Victor
+	static void testeGerarNumero() {
+		int numero = 4;
+		int numeroSorteado = gerarNumero(numero);
+		if (numeroSorteado < numero) {
+			System.out.println("Ok, passou no teste");
+			System.out.println("Numero soretado: " + numeroSorteado);
+		} else {
+			System.out.println("Essa não, temos um erro!");
+		}
+
 	}
 }
