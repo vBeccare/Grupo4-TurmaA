@@ -1017,5 +1017,18 @@ public class JogoRPG {
 		} else {
 			System.out.println("\nEssa não, temos um erro!");
 		}
+
+	}
+
+	static void testarVariaveCofre() {
+		statusCadeado();
+		statusCadeado();
+
+		if (tentativasEscalada == 2) {
+
+			System.out.println("\nEssa não, temos um erro!");
+		} else {
+			System.out.println("\nOk, passou no teste");
+		}
 	}
 }
