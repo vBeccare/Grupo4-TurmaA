@@ -496,12 +496,12 @@ public class JogoRPG {
 	static void prologo() {
 		int resp;
 		System.out.println(
-				"\nTudo começou pelo amanhecer daquele dia que seria marcado para sempre nos livros de história: "
+				"\nTudo começou no amanhecer daquele dia que seria marcado para sempre nos livros de história: "
 						+ "\nO DIA QUE O BRASIL FOI INVADIDO!");
 		System.out.println(
 				"A Coalisão era um grupo de países que se reuniram em busca da cura da praga que afetou a produção mundial de café."
-						+ "\nEssa praga foi transmitida por fungos que eram propagados pelo ar por meio de esporos,"
-						+ "\nestes que em contato com os grãos, alteravam a genética e impossibilitavam o desenvolvimento do grão de café.");
+						+ "\nEssa praga foi transmitida por fungos que eram propagados pelo ar, por meio de esporos,"
+						+ "\nque ao entrar em contato com os grãos, alteravam a genética e impossibilitavam o desenvolvimento do grão de café.");
 
 		System.out.println(
 				"Naquela manhã, o Major se encontrava no quartel extremamente enfurecido! E pronto para dar as ordens para o seu fiel subordinado, o Capitão:");
@@ -513,7 +513,7 @@ public class JogoRPG {
 		System.out.println("-Personagem: " + nomeJogador);
 
 		System.out.println("-Major: " + nomeJogador + "? Hahahaha!! Isso aqui é uma guerra! "
-				+ "\n-Capitão: Aqueles selvagens estão nos atacando e vocês vão ficar trocando figurinhas sobre um ao outro? "
+				+ "\n-Capitão: Aqueles selvagens estão nos atacando e vocês vão ficar trocando figurinhas um com o outro? "
 				+ "\nAqui você vai ser o soldado 06!” Gritou.");
 		do {
 			System.out.println(
@@ -544,24 +544,24 @@ public class JogoRPG {
 				+ "                          /____/                     ");
 		System.out.println("\n\n");
 		System.out.println("\r\n"
-				+ "O Major foi informado de que o plano da coalisão era conseguir roubar o antídoto que estava sendo desenvolvido ali em Três corações, "
-				+ "\ne posteriormente pousariam no aeroporto de Mogi para pegar a outra parte da pesquisa. Ali os paraquedistas se reuniriam com as tropas de Mogi, "
-				+ "\ne viriam em comboios para Paraty, onde sumiriam por meio de navios que os aguardavam na praia.\r\n"
+				+ "O Major foi informado de que o plano da coalisão era roubar o antídoto que estava sendo desenvolvido ali em Três corações, "
+				+ "\ne posteriormente pousar no aeroporto de Mogi para pegar a outra parte da pesquisa. Ali os paraquedistas se reuniriam com as tropas de Mogi, "
+				+ "\ne viriam em comboios para Paraty, onde iriam embora por meio de navios que os aguardavam na praia.\r\n"
 				+ "\r\n"
-				+ "O plano da coalisão era trazer tropas por meio da praia para conseguir fazer a retaguarda dos soldados que roubaram a cura. "
+				+ "O plano da coalisão era trazer tropas pela praia para conseguir fazer a retaguarda dos soldados que roubaram a cura. "
 				+ "\nEstes soldados tentariam a qualquer custo retardar as tropas brasileiras que os seguiam.\r\n"
 				+ "\r\n"
 				+ "“Estes desgraçados querem nos roubar para depois bancar os bons moços! Isso não vai ficar assim!!” Gritou Major ao telefone com um de seus subordinados.\r\n"
 				+ "\r\n"
-				+ "Pouco depois, Capitão e 06 foram ordenados pelo Major e se deslocarem imediatamente para o campo de batalha, "
+				+ "Pouco depois, Capitão e 06 foram ordenados pelo Major a se deslocarem imediatamente para o campo de batalha, "
 				+ "\npois foi informado que um Sniper já havia abatido mais de 20 soldados.\r\n" + "\r\n"
 				+ "- Major: Capitão, eu te ordeno a eliminar este cretino! O infeliz já matou mais que a peste negra! Estou perdendo muitos homens!!!\r\n"
 				+ "\r\n" + "Certo, estamos a caminho! “Disse o Capitão”\r\n" + "\r\n"
 				+ "- 06: Capitão! O que faremos?\r\n" + "\r\n"
-				+ "- Capitão: Agora iremos para o arsenal, você precisará de escolher um rifle para o combate.\r\n"
+				+ "- Capitão: Agora iremos para o arsenal, você precisará escolher um rifle para o combate.\r\n"
 				+ "\r\n"
-				+ "-E antes que eu me esqueça, implementamos recentemente novas senhas nos cofres, você precisará de responder corretamente a pergunta feita para abrir o seu cofre."
-				+ "\n Tome muito cuidado! Pois se você errar 3 vezes seu cofre ficará trancado para sempre!\r\n"
+				+ "-E antes que me esqueça, implementamos recentemente novas senhas nos cofres, você precisará responder corretamente à pergunta feita para abrir o cofre."
+				+ "\n Tome muito cuidado! Pois se errar 3 vezes, o cofre ficará trancado para sempre!\r\n"
 				+ "\r\n" + "-06: Entendido Capitão!\r\n");
 
 		desafio1(numeroSorteado);
@@ -584,8 +584,8 @@ public class JogoRPG {
 		System.out.println("\n- Ok... Responde 06 quase chorando");
 
 		System.out.println(
-				"\nAinda assustado, 06 continuou seguindo e pensando como que ele iria vencer os seus medos, afinal não tinha mais como voltar atrás... "
-						+ "\nele gostava de ser um soldado, e ainda mais da classe Sniper, pois no quartel ele havia "
+				"\nAinda assustado, 06 continuou seguindo e pensando como iria vencer os seus medos, afinal não tinha como voltar atrás... "
+						+ "\nele gostava de ser um soldado da classe Sniper, pois no quartel havia "
 						+ "\nganho medalhas de honra por ser o melhor atirador.");
 
 		System.out.println(
@@ -600,14 +600,14 @@ public class JogoRPG {
 		int numeroSorteado = gerarNumero(2);
 
 		System.out.println(
-				"\nDepois da escalada, Capitão e 06 se posicionaram atrás de uma rocha que serviria de cobertura. E enquanto se prepararam, 06 viu algo "
+				"\nDepois da escalada, Capitão e 06 se posicionaram atrás de uma rocha que serviria de cobertura. Enquanto se preparavam, 06 viu algo "
 						+ "\nque mudaria completamente o seu comportamento.");
 		System.out.println("\n- Capitão: Precisamos encontrar esse Sniper o quanto antes! Prepare o seu "
 				+ "fuzil enquanto eu o localizo com o binóculo.");
 		System.out.println("\n- 06: Certo! Ei espera... aquele ali não é o meu vizinho?");
 		System.out.println(
-				"\nNaquele momento 06 viu o seu vizinho e amigo de quartel sendo morto pelo Sniper, como se não bastasse ter visto aquela cena, ele também conseguiu localizar o atirador."
-						+ "\nEnfurecido, ele tomou agiu imediatamente, se posicionou e se preparou para atirar.\n");
+				"\nNaquele momento 06 viu o seu vizinho e amigo de quartel sendo morto pelo Sniper, como se não bastasse ter visto aquela cena, também conseguiu localizar o atirador."
+						+ "\nEnfurecido, agiu imediatamente, se posicionando e se preparando para atirar.\n");
 
 		desafio3(numeroSorteado);
 		correto = false;
@@ -623,12 +623,12 @@ public class JogoRPG {
 						+ "Seu maluco!!!” Exclamou o capitão com uma certa admiração pela boa pontaria.");
 		System.out.println("\n- 06: Ele matou o meu amigo! Você não faria o mesmo?");
 		System.out.println(
-				"\n- Capitão: Cara eu só não vou te reportar para o Major por você ter sido eficiente, mas saiba que aqui a "
-						+ "gente não faz o que dá na telha! A gente segue ordens! Entendido?");
-		System.out.println("\n- “Sim senhor capitão!” Exclamou 06 prestando continência.");
+				"\n- Capitão: Cara eu só não te reporto para o Major por você ter sido eficiente, mas saiba que aqui"
+						+ "não fazemos o que der na telha! Seguimos ordens! Entendido?");
+		System.out.println("\n- “Sim senhor, Capitão!” Exclamou 06 prestando continência.");
 		System.out.println(
-				"\nDepois deste combate, os dois seguiram para a região de Mogi para deter o desembarque das tropas que aterrissariam em aviões, era preciso "
-						+ "ser rápido pois a segunda parte da cura ainda corria risco.");
+				"\nDepois deste combate, os dois seguiram para a região de Mogi para deter o desembarque das tropas que iam aterrissar seus aviões. "
+				+ "\nEra preciso ser rápido. A segunda parte da cura ainda corria risco.");
 		System.out.println("\n\n");
 		System.out.println(
 				"\n   / ____/_  __   ____  ____ _____     ____  ________  _____(_)________     ____/ /___  ____ ___  (_)___  ____ ______   ____     ____ ___  __  ______  ____/ /___      \r\n"
@@ -644,23 +644,23 @@ public class JogoRPG {
 						+ "             /_/                                        /___/                                                          /_/                    ");
 		System.out.println("\n\n");
 		System.out.print(
-				"\n\n06 e Capitão partiram em disparada, eles precisavam de chegar em Mogi o quanto antes, pois como o ataque da coalisão foi muito mal "
-						+ "coordenado, o Major acreditava que era possível encurralar as tropas e expulsá-las para as praias de Paraty, ou até mesmo capturá-las. "
-						+ "Mas independente do método, era de suma importância que os Franco-Atiradores inimigos fossem eliminados.");
+				"\n\n06 e Capitão partiram em disparada, eles precisavam chegar em Mogi o quanto antes. O ataque da coalisão foi muito mal "
+						+ "coordenado. O Major acreditava que era possível encurralar as tropas e expulsá-las para as praias de Paraty, ou até mesmo capturá-las. "
+						+ "Independente do método, era de suma importância que os Franco-Atiradores inimigos fossem eliminados.");
 		System.out.println(
 				"\nEnquanto Capitão dirigia o caminhão militar com os demais soltados na caçamba, 06 estava no banco do carona pensando em como seria a "
-						+ "batalha, ele parecia um pouco ansioso.");
+						+ "batalha. Ele parecia um pouco ansioso.");
 		System.out.println("\n- Capitão: 06! O que você tanto pensa aí? Não acha que está um pouco quieto demais?");
 		System.out
 				.println("\n- “Não Capitão, eu só estou me preparando para o combate” disse 06 com um pouco de medo.");
 		System.out.println(
-				"\n- Capitão: Cara, eu sei que você está com medo, mas pensa bem. Se a gente sair daqui a gente pode montar uma empresa, abrir um negócio, ficar ricos e dominar o mundo! "
+				"\n- Capitão: Cara, eu sei que você está com medo, mas pensa bem. Se a gente sair daqui, podemos montar uma empresa, abrir um negócio, ficar ricos e dominar o mundo! "
 						+ "\nSão infinitas as possibilidades! ");
 		System.out.print(
 				"\n\nMas isso só vai acontecer se a gente se sair bem e conseguir vencer essa batalha!!! Ânimo 06!");
 		System.out.print("\n- “Tudo bem Capitão!” disse 06 mais confiante.");
 		System.out.print(
-				"\nAo chegar em Mogi a guerra já estava ocorrendo no aeroporto, porém dessa vez a coalisão estava totalmente perdida, pois já havia tropas advindas de Campinas e São Paulo "
+				"\nAo chegar em Mogi a guerra já estava ocorrendo no aeroporto. Dessa vez a coalisão estava totalmente perdida, pois já havia tropas advindas de Campinas e São Paulo "
 						+ "combatendo no local. Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transformou em uma máquina! Uma besta enjaulada com ódio! Não deixando "
 						+ "uma alma viva sequer no seu caminho!");
 
@@ -701,7 +701,7 @@ public class JogoRPG {
 				+ "                               K;             ,0  0,    .;oOXW  Nc   .k         \r\n" + "");
 
 		System.out.println("\n- Capitão: Também atirando com o meu fuzil fica fácil! Agora elimina aquele ali que "
-				+ "\nestá às 10 horas lá na guarita.\n");
+				+ "\nestá às 10 horas, lá na guarita.\n");
 
 		desafio4(numeroSorteado);
 		correto = false;
@@ -719,7 +719,7 @@ public class JogoRPG {
 		System.out.println(
 				"Depois de toda aquela troca de tiros, a coalisão iniciou a sua partida em retirada, conforme o Major havia previsto. \nCapitão estava exultante!\r\n"
 						+ "\r\n"
-						+ "- Capitão: Meu Jovem! Você conseguiu!! A gente conseguiu expulsar eles e agora só precisamos de garantir que isso seja concluído para que possamos sair daqui! Montar nossa empresa! DOMINAR O MUNDO!\r\n"
+						+ "- Capitão: Meu Jovem! Você conseguiu!! A conseguimos expulsar eles e só precisamos garantir que isso seja concluído para que possamos sair daqui! Montar nossa empresa! DOMINAR O MUNDO!\r\n"
 						+ "\r\n" + "- 06: Eu não preciso dominar o mundo, só preciso ajudar o meu país.\r\n" + "");
 
 	}
@@ -738,8 +738,8 @@ public class JogoRPG {
 				+ "\r\n"
 				+ "06 ao avistar a ponte logo desceu do caminhão, mas pressentiu algo estranho e comentou com o capitão:\r\n"
 				+ "\r\n"
-				+ "“- Capitão! Você não acha que eles colocaram bombas? Essa ponte está estranha demais... “disse 06 já procurando o detector de metais.\r\n"
-				+ "\r\n" + "- Capitão: Eu sinceramente também acho o mesmo, deixe me ver...\r\n" + "\r\n"
+				+ "“- Capitão! Você não acha que eles colocaram bombas? Essa ponte está estranha demais... “disse 06 analisando o local.\r\n"
+				+ "\r\n" + "- Capitão: Eu também acho. Deixe me ver...\r\n" + "\r\n"
 				+ "Após quase ter pisado em uma bomba, e ter sido salvo por 06 que o puxou pela roupa. O capitão sugeriu duas opções. \nSeguir pela ponte economizando tempo e desarmando as bombas, ou dar a volta pelas rodovias: SP-459, SP-153, SP-125 e SP-101.\r\n"
 				+ "\r\n"
 				+ "- Capitão: Obrigado 06 por ter salvado a minha vida! Confesso que fui imprudente! Mas enfim... precisamos de nos decidir, \nse desviamos das bombas chegamos mais rápido e talvez possamos eliminar o Tenente da coalisão. \nAgora, se darmos a volta provavelmente iremos nos atrasar e o Major vai dar o mérito para outra pessoa, e então... o que você prefere?\r\n"
@@ -765,7 +765,7 @@ public class JogoRPG {
 			correto = false;
 
 			System.out.println(
-					"Em um tiro certeiro! 06 pôs o inimigo ao chão, e aquilo decretava o fim da guerra, pois os soldados que sobraram, ou se renderam, ou simplesmente fugiram para o navio.\r\n"
+					"Em um tiro certeiro! 06 pôs o inimigo ao chão, e aquilo decretava o fim da guerra, pois os soldados que sobraram, se renderam, ou simplesmente fugiram para o navio.\r\n"
 							+ "\r\n" + "- Capitão: 06, eu acho que você acabou com a guerra...\r\n" + "\r\n"
 							+ "- 06: Esperamos que sim... \r\n" + "");
 
@@ -774,7 +774,7 @@ public class JogoRPG {
 		}
 
 		System.out.println(
-				"Após o fim dessa invasão, a cura foi finalmente terminada e a coalisão entrou em contato com a embaixada brasileira para pôr um fim nos conflitos, eles alagavam que tinham sido persuadidos por um certo Tenente especial.\r\n"
+				"Após o fim dessa invasão, a cura foi finalmente terminada e a coalisão entrou em contato com a embaixada brasileira para pôr um fim nos conflitos, eles alegavam que haviam sido persuadidos por um certo Tenente especial.\r\n"
 						+ "\r\n"
 						+ "Depois que tudo acabou, Capitão e 06 foram condecorados com diversos prêmios e medalhas dentro do exército brasileiro. \r\n"
 						+ "\r\n"
@@ -782,7 +782,7 @@ public class JogoRPG {
 						+ "\r\n" + "\r\n"
 						+ "- “Capitão, eu lembro dele ele me deu aula na faculdade! Eu só não lembro do seu nome... era Tadeu? Ou será que era Takeo? \nSinceramente não me lembro” disse 06 enquanto o via na televisão.\r\n"
 						+ "\r\n"
-						+ "O tal professor conseguiu um prêmio Nobel por seus feitos, e foi convidado pela comunidade científica para apresentar o seu projeto em Kiev, na Ucrânia. \nDizem os boatos que ele até se casou com uma moça e ficou por lá mesmo.\r\n"
+						+ "O tal professor conseguiu um prêmio Nobel por seus feitos, e foi convidado pela comunidade científica para apresentar o seu projeto em Kiev, na Ucrânia. \nDizem que até se casou com uma moça e ficou por lá mesmo.\r\n"
 						+ "\r\n"
 						+ "- 06: Fico feliz que tudo deu certo! E pensar que essa guerra toda foi por causa de café...\r\n"
 						+ "\r\n" + "- Capitão: pois é...\r\n" + "\r\n"
@@ -791,8 +791,8 @@ public class JogoRPG {
 						+ "- 06: Nada, foi só uma lembrança que eu tive\r\n" + "\r\n" + "\r\n" + "Fim.\r\n" + "");
 
 		System.exit(0);
-
-	}
+               
+            }
 
 	// ------- aqui termina os metodos usados no jogar -------
 
