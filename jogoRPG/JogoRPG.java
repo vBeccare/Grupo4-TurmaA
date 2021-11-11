@@ -70,7 +70,7 @@ public class JogoRPG {
 		} else if (tentativasEscalada == 1) {
 			System.out.println("\nSoldado, desse jeito você vai acabar caindo!!");
 		} else if (tentativasEscalada == 0) {
-			System.out.println("\nVocê pegou errado numa pedra e acabou caindo!");
+			System.out.println("\nVocê pisou errado numa pedra e acabou caindo!");
 			System.exit(0);
 		}
 	}
@@ -276,7 +276,7 @@ public class JogoRPG {
 		String pergunta2 = "\nVocê precisa escalar... Sabendo que em um exército possui " + valorPergunta2
 				+ " batalhões. \n" + "Cada batalhão possui " + valorPergunta2
 				+ " soldados e cada soldado tem que fazer uma marcha de " + valorPergunta2
-				+ "km. Quantos km são percorridos ao todo?: \n";
+				+ "km. Quantos km são percorridos ao todo? \n";
 		formularPergunta(alternativas2, numeroQuestao2, valorResposta2, pergunta2, "escalada");
 	}
 
