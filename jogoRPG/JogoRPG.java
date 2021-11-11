@@ -295,7 +295,7 @@ public class JogoRPG {
 		String[][] alternativas3 = new String[][] { { "701", "727", "729", "731", "735" },
 				{ "312", "313", "314", "318", "322" }, { "172", "174", "176", "178", "180" } };
 
-		String pergunta3 = "\nDado um valor " + valorPergunta3 + " em hexadecimal, converta o número para octal: \n";
+		String pergunta3 = "\nDado o valor " + valorPergunta3 + " em hexadecimal, converta o número para octal: \n";
 		formularPergunta(alternativas3, numeroQuestao3, valorResposta3, pergunta3, "tiro");
 	}
 
@@ -362,6 +362,132 @@ public class JogoRPG {
 		String pergunta6 = "\nSe A=√(√6-2). √(2+√6), então o valor de A é: ";
 
 		formularPergunta(alternativas6, numeroQuestao6, valorResposta6, pergunta6, "tiro");
+
+	}
+
+	static void caminhoMinado() {
+		int contBombs = 0;
+		int seletor = 0;
+		int pontos = 0;
+		int path = 9;
+		int numberBombs = 3;
+		boolean win = false;
+
+		int[] campo = new int[path];
+
+		do {
+
+			int valorSorteado = new Random().nextInt(path) + 1;
+			valorSorteado = valorSorteado - 1;
+
+			if (campo[valorSorteado] != -1) {
+				campo[valorSorteado] = -1;
+				contBombs++;
+
+			} else if (campo[valorSorteado] == -1) {
+				campo[valorSorteado] = -1;
+
+			} else {
+
+				campo[valorSorteado] = 0;
+			}
+
+		} while (contBombs < numberBombs);
+
+		System.out.println("Escolha bem o seu próximo passo: ");
+
+		do {
+
+			do {
+				for (int campinho : campo) {
+
+					if (campinho == -1 || campinho == 0) {
+						System.out.print(" _ ");
+					} else {
+						System.out.print(" X ");
+					}
+				}
+
+				System.out.println();
+
+				seletor = entradaDadosInt("");
+				seletor = seletor - 1;
+				if (seletor < 0 || seletor > (path - 1)) {
+					System.out.println("Entrada Inválida");
+				}
+			} while (seletor < 0 && seletor > (path - 1));
+
+			if ((campo[seletor]) == 0) {
+				campo[seletor] = 1;
+
+				if (seletor == campo.length - 1) {
+					if (campo[seletor - 1] == -1) {
+
+						System.out.println("Cuidado: bomba próxima!");
+					}
+				} else if (seletor == 0) {
+					if (campo[seletor + 1] == -1) {
+
+						System.out.println("Cuidado: bomba próxima!");
+					}
+				} else {
+					if (campo[seletor - 1] == -1 || campo[seletor + 1] == -1) {
+
+						System.out.println("Cuidado: bomba próxima!");
+					}
+				}
+
+				pontos++;
+
+				if (pontos == path - numberBombs) {
+					win = true;
+					System.out.println(
+							"\n\nApós passarem pelas bombas, os dois andaram por cerca de uma hora em direção à praia. Ao chegarem lá encontraram o melhor cenário possível, \no caminho que estavam seguindo dava direto na cabana do tenente.\r\n"
+									+ "\r\n"
+									+ "- Capitão: 06! Nós somos muito sortudos, olha aquilo! Ele está na cabana observando os soldados lutando, \ne aguardando o navio no horizonte vir o buscar. Eu vou dar um fim nessa guerra agora mesmo! Aguarde aqui!\r\n"
+									+ "\r\n"
+									+ "Se esgueirando por meio dos arbustos, o capitão invadiu a cabana onde ele se encontrava e com uma pistola ele atacou o tenente.\r\n"
+									+ "\r\n" + "- Capitão: MORRA SEU DESGRAÇADO!!!\r\n" + "\r\n"
+									+ "E depois de descarregar os 9 tiros de sua pistola IMBEL no tenente, o Capitão havia acabado com a guerra. \r\n"
+									+ "\r\n"
+									+ "Os soldados que sobraram, ou se renderam, ou simplesmente fugiram para o navio que acabara de chegar.\r\n"
+									+ "\r\n" + "");
+
+					for (int campinho : campo) {
+
+						if (campinho == 1) {
+							System.out.print(" X ");
+						} else if (campinho == 0) {
+							System.out.print(" _ ");
+						} else {
+							System.out.print(" B ");
+						}
+
+					}
+				}
+
+			} else if ((campo[seletor]) == 1) {
+				System.out.println("Campo Já Aberto");
+
+			} else {
+
+				for (int campinho : campo) {
+
+					if (campinho == 1) {
+						System.out.print(" X ");
+					} else if (campinho == 0) {
+						System.out.print(" _ ");
+					} else {
+						System.out.print(" B ");
+					}
+
+				}
+
+				System.out.println("Game Over! você pisou na bomba!");
+				System.exit(0);
+			}
+
+		} while (!win);
 
 	}
 
@@ -538,14 +664,41 @@ public class JogoRPG {
 						+ "combatendo no local. Ao ver o cenário favorável 06 mudou, e com as ordens do Capitão ele se transformou em uma máquina! Uma besta enjaulada com ódio! Não deixando "
 						+ "uma alma viva sequer no seu caminho!");
 
-		// Inserir imagem 06 puto
-
 		System.out.println("\n- Capitão: 06! Inimigo às 2 horas!!");
 		System.out.print("\n- 06: Inimigo abatido!");
 		System.out.println("\n- Capitão: Boa 06! Agora tenha cuidado! Inimigo avistado às 12 horas!!");
 		System.out.println("\n- 06: Inimigo abatido!");
 
-		// imagem 06 matando mais que a peste negra
+		System.out.println("                                                                                \r\n"
+				+ "                                             W0dc;;:lkX                         \r\n"
+				+ "                                            Nd.       ;0                        \r\n"
+				+ "                                           Wk.         cN                       \r\n"
+				+ "                                          WK;          ;X                       \r\n"
+				+ "                                         WWKo'         .clcclxXW                \r\n"
+				+ "                        NXW  WWNNNK00KNNNXXXO,                'xW               \r\n"
+				+ "                 X0KXXX0c,ldl;''''....''.....                  .dW              \r\n"
+				+ "                Wkldxkkdlodxdl;.         .,..                   '0              \r\n"
+				+ "                             WW0l;'      :XKl.                  .dW             \r\n"
+				+ "                                WW0'    .lXk,                    ;K             \r\n"
+				+ "                                  Nk'    .,.                     .k             \r\n"
+				+ "                                 WW K;         .l,                cN            \r\n"
+				+ "                                 WWWW0c.     ,oKW0;.              .O            \r\n"
+				+ "                                  Nklc:'.  .:kXNWWO,...           .dW           \r\n"
+				+ "                                  k'....''..'..,;cxd;..            ;K           \r\n"
+				+ "                                  d.'. ..'..'.....,,,.  ..         .k           \r\n"
+				+ "                                W x.......  ..... .  .. ..          d           \r\n"
+				+ "                                WWO. ....  .  ..    ...             d           \r\n"
+				+ "                                WWX:        ,c,.                   .x           \r\n"
+				+ "                                   x.       ;KXkl:'.               .k           \r\n"
+				+ "                                   X;       .k   WXx.              .dW          \r\n"
+				+ "                                   Wd.       oW  WNl                .O          \r\n"
+				+ "                                    Nd'      lN   k.                .kW         \r\n"
+				+ "                                    WWX:     .O  Wl                  :K         \r\n"
+				+ "                                WW W Nk'      dW K,                   d         \r\n"
+				+ "                                WXKKO:.       :N k.            .l;   .xW        \r\n"
+				+ "                               No...     .    '0 d         ..:dKWK; .oN         \r\n"
+				+ "                               Xl.     .,,.   .O 0;      'oOXW  WO'  cX         \r\n"
+				+ "                               K;             ,0  0,    .;oOXW  Nc   .k         \r\n" + "");
 
 		System.out.println("\n- Capitão: Também atirando com o meu fuzil fica fácil! Agora elimina aquele ali que "
 				+ "\nestá às 10 horas lá na guarita.\n");
@@ -563,13 +716,81 @@ public class JogoRPG {
 		desafio5(numeroSorteado);
 		correto = false;
 
+		System.out.println(
+				"Depois de toda aquela troca de tiros, a coalisão iniciou a sua partida em retirada, conforme o Major havia previsto. \nCapitão estava exultante!\r\n"
+						+ "\r\n"
+						+ "- Capitão: Meu Jovem! Você conseguiu!! A gente conseguiu expulsar eles e agora só precisamos de garantir que isso seja concluído para que possamos sair daqui! Montar nossa empresa! DOMINAR O MUNDO!\r\n"
+						+ "\r\n" + "- 06: Eu não preciso dominar o mundo, só preciso ajudar o meu país.\r\n" + "");
+
 	}
 
 	static void historiaParte6() {
 		int numeroSorteado = gerarNumero(1);
+		int decisao;
 
-		desafio6(numeroSorteado);
-		correto = false;
+		System.out.println("Enquanto partiam para Paraty no caminhão, Capitão recebeu uma ligação do Major:\r\n"
+				+ "\r\n"
+				+ "- Capitão! Se você e o 06 conseguirem eliminar o tenente especial da coalisão, vocês serão condecorados, podem ter certeza de que farei vocês dois se sentirem muito especiais!\r\n"
+				+ "\r\n" + "Capitão e 06 entusiasmaram muito, pois afinal, tudo aquilo estava perto do fim. \r\n"
+				+ "Ao chegar próximo de Paraty, os dois se depararam com um problema, a Coalisão tinha colocado bombas em uma ponte na seguinte localização: -23.2255999,-44.7662465 \r\n"
+				+ "\r\n"
+				+ "E por mais tosco que parecia colocar bombas em uma ponte tão pequena, o plano deles era apenas atrasar a retaguarda, \nvisto que sabiam que tropas vindas de Santos e de Angra já estariam na praia lutando com a marinha da Coalisão.\r\n"
+				+ "\r\n"
+				+ "06 ao avistar a ponte logo desceu do caminhão, mas pressentiu algo estranho e comentou com o capitão:\r\n"
+				+ "\r\n"
+				+ "“- Capitão! Você não acha que eles colocaram bombas? Essa ponte está estranha demais... “disse 06 já procurando o detector de metais.\r\n"
+				+ "\r\n" + "- Capitão: Eu sinceramente também acho o mesmo, deixe me ver...\r\n" + "\r\n"
+				+ "Após quase ter pisado em uma bomba, e ter sido salvo por 06 que o puxou pela roupa. O capitão sugeriu duas opções. \nSeguir pela ponte economizando tempo e desarmando as bombas, ou dar a volta pelas rodovias: SP-459, SP-153, SP-125 e SP-101.\r\n"
+				+ "\r\n"
+				+ "- Capitão: Obrigado 06 por ter salvado a minha vida! Confesso que fui imprudente! Mas enfim... precisamos de nos decidir, \nse desviamos das bombas chegamos mais rápido e talvez possamos eliminar o Tenente da coalisão. \nAgora, se darmos a volta provavelmente iremos nos atrasar e o Major vai dar o mérito para outra pessoa, e então... o que você prefere?\r\n"
+				+ "");
+
+		do {
+			decisao = entradaDadosInt("Decisão: \n(1) - Dar a volta \n(2) - Seguir em frente");
+
+		} while (decisao != 1 && decisao != 2);
+
+		if (decisao == 1) {
+
+			System.out.println(
+					"Após uma viagem de mais de 5 horas, os dois sequer esperavam que encontrariam alguma resistência, mas muito pelo contrário, por incrível que pareça haviam chegado mais reforços para fazer a extração do tenente especial. \nEra muito estranho, tudo aquilo estar acontecendo, mas tudo ficou claro ao receberem uma ligação do Major:\r\n"
+							+ "\r\n"
+							+ "- “Ele está se escondendo, nossas forças de inteligência descobriram que ele conseguiu alguns grãos modificados geneticamente, "
+							+ "\nse eles saírem do país com isso podemos ter uma crise diplomática maior do que já teremos!” disse o Major pelo rádio.\r\n"
+							+ "\r\n"
+							+ "Ao chegarem na praia, 06 e Capitão viram a sua chance de ouro! O tenente estava correndo para dentro de um Navio com uma maleta em mãos. \nEra a oportunidade perfeita para acabar com a guerra!\r\n"
+							+ "\r\n" + "- Capitão: 06! Ele está correndo, é agora ou nunca! Atire!!\r\n");
+
+			desafio6(numeroSorteado);
+			correto = false;
+
+			System.out.println(
+					"Em um tiro certeiro! 06 pôs o inimigo ao chão, e aquilo decretava o fim da guerra, pois os soldados que sobraram, ou se renderam, ou simplesmente fugiram para o navio.\r\n"
+							+ "\r\n" + "- Capitão: 06, eu acho que você acabou com a guerra...\r\n" + "\r\n"
+							+ "- 06: Esperamos que sim... \r\n" + "");
+
+		} else if (decisao == 2) {
+			caminhoMinado();
+		}
+
+		System.out.println(
+				"Após o fim dessa invasão, a cura foi finalmente terminada e a coalisão entrou em contato com a embaixada brasileira para pôr um fim nos conflitos, eles alagavam que tinham sido persuadidos por um certo Tenente especial.\r\n"
+						+ "\r\n"
+						+ "Depois que tudo acabou, Capitão e 06 foram condecorados com diversos prêmios e medalhas dentro do exército brasileiro. \r\n"
+						+ "\r\n"
+						+ "06 estava feliz não só por ter ganho seus prêmios, mas também pois um professor dos tempos de faculdade havia ganhado um prêmio por ter desenvolvido o software que ajudou na conclusão da pesquisa. \n06 só não se recordava muito bem o seu nome... \r\n"
+						+ "\r\n" + "\r\n"
+						+ "- “Capitão, eu lembro dele ele me deu aula na faculdade! Eu só não lembro do seu nome... era Tadeu? Ou será que era Takeo? \nSinceramente não me lembro” disse 06 enquanto o via na televisão.\r\n"
+						+ "\r\n"
+						+ "O tal professor conseguiu um prêmio Nobel por seus feitos, e foi convidado pela comunidade científica para apresentar o seu projeto em Kiev, na Ucrânia. \nDizem os boatos que ele até se casou com uma moça e ficou por lá mesmo.\r\n"
+						+ "\r\n"
+						+ "- 06: Fico feliz que tudo deu certo! E pensar que essa guerra toda foi por causa de café...\r\n"
+						+ "\r\n" + "- Capitão: pois é...\r\n" + "\r\n"
+						+ "- 06: Caramba, até me lembrei de um jogo que eu gostava de jogar na faculdade, era bem legal! Lembro que tinha magos de Java, e se utilizava café como Mana...\r\n"
+						+ "\r\n" + "\r\n" + "- Capitão: Rapaz, mas do que você está falando?\r\n" + "\r\n"
+						+ "- 06: Nada, foi só uma lembrança que eu tive\r\n" + "\r\n" + "\r\n" + "Fim.\r\n" + "");
+
+		System.exit(0);
 
 	}
 
@@ -621,7 +842,7 @@ public class JogoRPG {
 					+ "─────────▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓"
 					+ "     mas sem sucesso. Depois de conversas que envolviam o aumento da exportação de café, e posteriormente, a tentativa de exploração \r\n"
 					+ "───────────▓▓▓▓▓▓▒▒▒▒▒▓▓▓▓"
-					+ "   do solo brasileiro, a tensões aumentaram.A \"Organização Mundial de Programadores\" (OMP) falava que era impossível trabalhar \r\n"
+					+ "   do solo brasileiro, a tensões aumentaram. A \"Organização Mundial de Programadores\" (OMP) falava que era impossível trabalhar \r\n"
 					+ "───────────────▓▓▓▓▓▓▓▓"
 					+ " em tais condições, e que seus programadores regrediram ao ponto de não conseguirem executar um simples: \"Hello World\". \r\n"
 					+ "Também foram professores, advogados, traders, caminhoneiros e diversas outras profissões do mundo todo.\""
@@ -757,9 +978,9 @@ public class JogoRPG {
 	}
 
 	public static void main(String[] args) {
-		//Para rodar os testes
-		//testeGerarNumero();
-		
+		// Para rodar os testes
+		// testeGerarNumero();
+
 		menu();
 	}
 
@@ -771,10 +992,11 @@ public class JogoRPG {
 		int numeroSorteado = gerarNumero(numero);
 		if (numeroSorteado < numero) {
 			System.out.println("Ok, passou no teste");
-			System.out.println("Numero soretado: " + numeroSorteado);
+			System.out.println("Numero sorteado: " + numeroSorteado);
 		} else {
 			System.out.println("Essa não, temos um erro!");
 		}
 
 	}
+
 }
