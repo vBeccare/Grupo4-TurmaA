@@ -980,13 +980,15 @@ public class JogoRPG {
 	public static void main(String[] args) {
 		// Para rodar os testes
 		// testeGerarNumero();
+		// testarVariavelVida();
+		// testarVariaveEscalada();
+		// testarVariaveCofre();
 
 		menu();
 	}
 
 	// TESTES
 
-	// Victor
 	static void testeGerarNumero() {
 		int numero = 4;
 		int numeroSorteado = gerarNumero(numero);
@@ -1024,7 +1026,7 @@ public class JogoRPG {
 		statusCadeado();
 		statusCadeado();
 
-		if (tentativasEscalada == 2) {
+		if (tentativasEscalada == 1) {
 
 			System.out.println("\nEssa não, temos um erro!");
 		} else {
