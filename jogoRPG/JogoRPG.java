@@ -999,4 +999,13 @@ public class JogoRPG {
 
 	}
 
+	static void testarVariavelVida() {
+        statusVida();
+        statusVida();
+        if (vida == 1) {
+            System.out.println("\nOk, passou no teste");
+        } else {
+            System.out.println("\nEssa não, temos um erro!");
+        }
+    }
 }
