@@ -806,7 +806,8 @@ public class JogoRPG {
 		historiaParte5();
 		historiaParte6();
 	}
-
+	
+	//metodo usado nas funcoes do menu para voltar
 	static void voltarMenu() {
 		int value;
 		value = entradaDadosInt("\n(1) Voltar");
@@ -853,6 +854,7 @@ public class JogoRPG {
 		}
 	}
 
+	//metodo monstrando instrucoes e regras do jogo
 	static void instruções() {
 		int value = 0;
 		while (value != 1) {
@@ -870,6 +872,7 @@ public class JogoRPG {
 
 	}
 
+	//metodo mostrando os créditos
 	static void criadores() {
 		int value = 0;
 		while (value != 1) {
