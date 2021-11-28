@@ -346,14 +346,11 @@ public class JogoRPG {
 	}
 
 	static void desafio6(int numeroQuestao6) {
-		// valores que podem ser utilizados na pergunta
-		String[] valoresPergunta6 = { "6" };
 
 		// valores que podem ser utilizados na resposta
 		String[] valoresResposta6 = { "02" };
 
 		// passando o mesmo valor para pergunta e resposta para ter o valor correto
-		String valorPergunta6 = valoresPergunta6[numeroQuestao6];
 		String valorResposta6 = valoresResposta6[numeroQuestao6];
 
 		// valores que podem aparecer como opcao de alternativas
@@ -561,8 +558,8 @@ public class JogoRPG {
 				+ "- Capitão: Agora iremos para o arsenal, você precisará escolher um rifle para o combate.\r\n"
 				+ "\r\n"
 				+ "-E antes que me esqueça, implementamos recentemente novas senhas nos cofres, você precisará responder corretamente à pergunta feita para abrir o cofre."
-				+ "\n Tome muito cuidado! Pois se errar 3 vezes, o cofre ficará trancado para sempre!\r\n"
-				+ "\r\n" + "-06: Entendido Capitão!\r\n");
+				+ "\n Tome muito cuidado! Pois se errar 3 vezes, o cofre ficará trancado para sempre!\r\n" + "\r\n"
+				+ "-06: Entendido Capitão!\r\n");
 
 		desafio1(numeroSorteado);
 		// definir a variavel como false, para não pular a proxima pergunta
@@ -628,7 +625,7 @@ public class JogoRPG {
 		System.out.println("\n- “Sim senhor, Capitão!” Exclamou 06 prestando continência.");
 		System.out.println(
 				"\nDepois deste combate, os dois seguiram para a região de Mogi para deter o desembarque das tropas que iam aterrissar seus aviões. "
-				+ "\nEra preciso ser rápido. A segunda parte da cura ainda corria risco.");
+						+ "\nEra preciso ser rápido. A segunda parte da cura ainda corria risco.");
 		System.out.println("\n\n");
 		System.out.println(
 				"\n   / ____/_  __   ____  ____ _____     ____  ________  _____(_)________     ____/ /___  ____ ___  (_)___  ____ ______   ____     ____ ___  __  ______  ____/ /___      \r\n"
@@ -708,7 +705,7 @@ public class JogoRPG {
 	}
 
 	static void historiaParte5() {
-		int numeroSorteado = gerarNumero(4);
+		int numeroSorteado = gerarNumero(2);
 
 		System.out.println("\n- Capitão: 06 você está fazendo o meu dia muito mais feliz! ");
 		System.out.println("\n- Parece que o amiguinho dele tomou o lugar no posto dele, acaba com ele!");
@@ -791,8 +788,8 @@ public class JogoRPG {
 						+ "- 06: Nada, foi só uma lembrança que eu tive\r\n" + "\r\n" + "\r\n" + "Fim.\r\n" + "");
 
 		System.exit(0);
-               
-            }
+
+	}
 
 	// ------- aqui termina os metodos usados no jogar -------
 
@@ -806,8 +803,8 @@ public class JogoRPG {
 		historiaParte5();
 		historiaParte6();
 	}
-	
-	//metodo usado nas funcoes do menu para voltar
+
+	// metodo usado nas funcoes do menu para voltar
 	static void voltarMenu() {
 		int value;
 		value = entradaDadosInt("\n(1) Voltar");
@@ -854,7 +851,7 @@ public class JogoRPG {
 		}
 	}
 
-	//metodo monstrando instrucoes e regras do jogo
+	// metodo monstrando instrucoes e regras do jogo
 	static void instruções() {
 		int value = 0;
 		while (value != 1) {
@@ -872,7 +869,7 @@ public class JogoRPG {
 
 	}
 
-	//metodo mostrando os créditos
+	// metodo mostrando os créditos
 	static void criadores() {
 		int value = 0;
 		while (value != 1) {
