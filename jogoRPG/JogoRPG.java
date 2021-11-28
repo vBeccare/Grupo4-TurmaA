@@ -978,59 +978,7 @@ public class JogoRPG {
 	}
 
 	public static void main(String[] args) {
-		// Para rodar os testes
-		// testeGerarNumero();
-		// testarVariavelVida();
-		// testarVariaveEscalada();
-		// testarVariaveCofre();
-
 		menu();
 	}
 
-	// TESTES
-
-	static void testeGerarNumero() {
-		int numero = 4;
-		int numeroSorteado = gerarNumero(numero);
-		if (numeroSorteado < numero) {
-			System.out.println("Ok, passou no teste");
-			System.out.println("Numero sorteado: " + numeroSorteado);
-		} else {
-			System.out.println("Essa não, temos um erro!");
-		}
-
-	}
-
-	static void testarVariavelVida() {
-		statusVida();
-		statusVida();
-		if (vida == 1) {
-			System.out.println("\nOk, passou no teste");
-		} else {
-			System.out.println("\nEssa não, temos um erro!");
-		}
-	}
-
-	static void testarVariaveEscalada() {
-		statusEscalada();
-
-		if (tentativasEscalada == 2) {
-			System.out.println("\nOk, passou no teste");
-		} else {
-			System.out.println("\nEssa não, temos um erro!");
-		}
-
-	}
-
-	static void testarVariaveCofre() {
-		statusCadeado();
-		statusCadeado();
-
-		if (tentativasEscalada == 1) {
-
-			System.out.println("\nEssa não, temos um erro!");
-		} else {
-			System.out.println("\nOk, passou no teste");
-		}
-	}
 }
